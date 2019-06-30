@@ -94,18 +94,18 @@
 
 
 
-  <meta name="description" content="本篇文章记录使用Github和Hexo搭建该博客的过程">
-<meta name="keywords" content="hexo,github,next">
+  <meta name="description" content="本篇文章记录 Hexo + NexT 使用过程中的一些问题">
+<meta name="keywords" content="hexo,next">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Github + Hexo 搭建博客">
-<meta property="og:url" content="https://xhzs.github.io/2019/06/30/first/index.html">
+<meta property="og:title" content="Hexo + NexT 的问题">
+<meta property="og:url" content="https://xhzs.github.io/2019/06/30/hexo_problem_list/index.html">
 <meta property="og:site_name" content="Wassup">
-<meta property="og:description" content="本篇文章记录使用Github和Hexo搭建该博客的过程">
+<meta property="og:description" content="本篇文章记录 Hexo + NexT 使用过程中的一些问题">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-30T07:29:16.022Z">
+<meta property="og:updated_time" content="2019-06-30T15:07:14.563Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Github + Hexo 搭建博客">
-<meta name="twitter:description" content="本篇文章记录使用Github和Hexo搭建该博客的过程">
+<meta name="twitter:title" content="Hexo + NexT 的问题">
+<meta name="twitter:description" content="本篇文章记录 Hexo + NexT 使用过程中的一些问题">
 
 
 
@@ -113,7 +113,7 @@
 
   
   
-  <link rel="canonical" href="https://xhzs.github.io/2019/06/30/first/">
+  <link rel="canonical" href="https://xhzs.github.io/2019/06/30/hexo_problem_list/">
 
 
 
@@ -123,7 +123,7 @@
   };
 </script>
 
-  <title>Github + Hexo 搭建博客 | Wassup</title>
+  <title>Hexo + NexT 的问题 | Wassup</title>
   
 
 
@@ -188,7 +188,7 @@
     </div>
     
       
-        <p class="site-subtitle">Nerver say never</p>
+        <p class="site-subtitle">今天要来点芝士吗</p>
       
     
     
@@ -292,23 +292,19 @@
   
     <div class="site-search">
       
-  <div class="algolia-popup popup search-popup">
-  <div class="algolia-search">
-    <div class="algolia-search-input-icon">
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
       <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
-    <div class="algolia-search-input" id="algolia-search-input"></div>
   </div>
-
-  <div class="algolia-results">
-    <div id="algolia-stats"></div>
-    <div id="algolia-hits"></div>
-    <div id="algolia-pagination" class="algolia-pagination"></div>
-  </div>
-
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
+  <div id="local-search-result"></div>
 </div>
 
 
@@ -355,7 +351,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://xhzs.github.io/2019/06/30/first/">
+    <link itemprop="mainEntityOfPage" href="https://xhzs.github.io/2019/06/30/hexo_problem_list/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xhzs">
@@ -372,7 +368,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Github + Hexo 搭建博客
+          <h1 class="post-title" itemprop="name headline">Hexo + NexT 的问题
 
               
             
@@ -398,10 +394,14 @@
                 
               
 
-              <time title="创建时间：2019-06-30 15:29:16" itemprop="dateCreated datePublished" datetime="2019-06-30T15:29:16+08:00">2019-06-30</time>
+              <time title="创建时间：2019-06-30 23:05:37 / 修改时间：23:07:14" itemprop="dateCreated datePublished" datetime="2019-06-30T23:05:37+08:00">2019-06-30</time>
             </span>
           
 
+          
+            
+
+            
           
 
           
@@ -413,7 +413,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博客/" itemprop="url" rel="index"><span itemprop="name">博客</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/blog/" itemprop="url" rel="index"><span itemprop="name">blog</span></a></span>
 
                 
                 
@@ -459,14 +459,8 @@
       
 
       
-        <p>本篇文章记录使用Github和Hexo搭建该博客的过程</p>
+        <p>本篇文章记录 Hexo + NexT 使用过程中的一些问题</p>
 <a id="more"></a>
-
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
-<li>系统：ubuntu 18.04</li>
-<li>nodejs:：</li>
-</ul>
-<h2 id="Hexo-的安装"><a href="#Hexo-的安装" class="headerlink" title="Hexo 的安装"></a>Hexo 的安装</h2><h3 id="Node-js-的安装"><a href="#Node-js-的安装" class="headerlink" title="Node.js 的安装"></a>Node.js 的安装</h3><h3 id="Hexo-的安装-1"><a href="#Hexo-的安装-1" class="headerlink" title="Hexo 的安装"></a>Hexo 的安装</h3><h2 id="Git-的安装"><a href="#Git-的安装" class="headerlink" title="Git 的安装"></a>Git 的安装</h2><h2 id="初步优化"><a href="#初步优化" class="headerlink" title="初步优化"></a>初步优化</h2>
       
     </div>
 
@@ -494,8 +488,6 @@
           
             <a href="/tags/hexo/" rel="tag"># hexo</a>
           
-            <a href="/tags/github/" rel="tag"># github</a>
-          
             <a href="/tags/next/" rel="tag"># next</a>
           
         </div>
@@ -505,6 +497,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/30/hexo/" rel="next" title="Github + Hexo 搭建博客">
+                <i class="fa fa-chevron-left"></i> Github + Hexo 搭建博客
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
@@ -545,17 +553,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -572,7 +571,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -656,23 +655,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境"><span class="nav-number">1.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-的安装"><span class="nav-number">2.</span> <span class="nav-text">Hexo 的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js-的安装"><span class="nav-number">2.1.</span> <span class="nav-text">Node.js 的安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo-的安装-1"><span class="nav-number">2.2.</span> <span class="nav-text">Hexo 的安装</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-的安装"><span class="nav-number">3.</span> <span class="nav-text">Git 的安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初步优化"><span class="nav-number">4.</span> <span class="nav-text">初步优化</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
@@ -1175,19 +1157,6 @@
   </script>
 
 
-
-
-  
-  
-  
-  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
-
-  
-  
-  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
-  
-
-  <script src="/js/algolia-search.js?v=7.1.2"></script>
 
 
 
