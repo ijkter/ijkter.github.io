@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Hexo + NexT 的问题]]></title>
     <url>%2F2019%2F06%2F30%2Fhexo_problem_list%2F</url>
-    <content type="text"><![CDATA[本篇文章记录 Hexo + NexT 使用过程中的一些问题]]></content>
+    <content type="text"><![CDATA[本篇文章记录 Hexo + NexT 使用过程中的一些问题 local_search 不能用打开首页（本地or线上），打开浏览器开发工具 Network 选项卡，点击首页“搜索”按钮，观察 search.xml 状态： 200 问题：Algolia 问题 解决：主题配置文件中关闭 Algolia 404 其他 问题：存在非法字符 解决：sublime 排查 .md 文件中所存在非法字符]]></content>
       <categories>
         <category>blog</category>
       </categories>
