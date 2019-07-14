@@ -95,14 +95,14 @@
   <meta name="description" content="[Updating]  本文梳理了 SQL 相关基础知识（基于《SQL基础教程》）">
 <meta name="keywords" content="SQL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SQL基础速查">
+<meta property="og:title" content="SQL基础速览">
 <meta property="og:url" content="https://xhzs.github.io/2019/07/02/sql/index.html">
 <meta property="og:site_name" content="今天要来点芝士吗">
 <meta property="og:description" content="[Updating]  本文梳理了 SQL 相关基础知识（基于《SQL基础教程》）">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-10T15:21:34.702Z">
+<meta property="og:updated_time" content="2019-07-11T15:18:56.540Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SQL基础速查">
+<meta name="twitter:title" content="SQL基础速览">
 <meta name="twitter:description" content="[Updating]  本文梳理了 SQL 相关基础知识（基于《SQL基础教程》）">
 
 
@@ -121,7 +121,7 @@
   };
 </script>
 
-  <title>SQL基础速查 | 今天要来点芝士吗</title>
+  <title>SQL基础速览 | 今天要来点芝士吗</title>
   
 
 
@@ -366,7 +366,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">SQL基础速查
+          <h1 class="post-title" itemprop="name headline">SQL基础速览
 
               
             
@@ -408,7 +408,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-10 23:21:34" itemprop="dateModified" datetime="2019-07-10T23:21:34+08:00">2019-07-10</time>
+                <time title="修改时间：2019-07-11 23:18:56" itemprop="dateModified" datetime="2019-07-11T23:18:56+08:00">2019-07-11</time>
               </span>
             
           
@@ -450,7 +450,27 @@
 
           <br>
           
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span title="本文字数">11k</span>
+            </span>
+          
 
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span title="阅读时长">10 分钟</span>
+            </span>
           
 
           
@@ -499,7 +519,33 @@
 <li>把数据通过层次结构（树形结构）的方式表现出来</li>
 <li>曾经主流，现已少用</li>
 </ul>
-<h3 id="数据库的结构"><a href="#数据库的结构" class="headerlink" title="数据库的结构"></a>数据库的结构</h3><h4 id="RDBMS的常见系统结构"><a href="#RDBMS的常见系统结构" class="headerlink" title="RDBMS的常见系统结构"></a>RDBMS的常见系统结构</h4><h4 id="表的结构"><a href="#表的结构" class="headerlink" title="表的结构"></a>表的结构</h4><h3 id="SQL概要"><a href="#SQL概要" class="headerlink" title="SQL概要"></a>SQL概要</h3><p>标准SQL<br>SQL语句及其种类</p>
+<h3 id="数据库的结构"><a href="#数据库的结构" class="headerlink" title="数据库的结构"></a>数据库的结构</h3><h4 id="RDBMS的常见系统结构"><a href="#RDBMS的常见系统结构" class="headerlink" title="RDBMS的常见系统结构"></a>RDBMS的常见系统结构</h4><h4 id="表的结构"><a href="#表的结构" class="headerlink" title="表的结构"></a>表的结构</h4><h3 id="SQL-概要"><a href="#SQL-概要" class="headerlink" title="SQL 概要"></a>SQL 概要</h3><h4 id="标准-SQL"><a href="#标准-SQL" class="headerlink" title="标准 SQL"></a>标准 SQL</h4><p>国际标准化组织（ISO）为 SQL 制定的相应标准，适用于各种 RDBMS</p>
+<h4 id="SQL-语句及其种类"><a href="#SQL-语句及其种类" class="headerlink" title="SQL 语句及其种类"></a>SQL 语句及其种类</h4><p>由关键字、表名、列名等组合而成一条 SQL 语句描述操作的内容</p>
+<ul>
+<li><p>DDL（Data Definition Language，数据定义语言）用来创建或者删除存储<br>数据用的数据库以及数据库中的表等对象。包含指令：</p>
+<ul>
+<li>CREATE： 创建数据库和表等对象</li>
+<li>DROP： 删除数据库和表等对象</li>
+<li>ALTER： 修改数据库和表等对象的结构</li>
+</ul>
+</li>
+<li><p>DML（Data Manipulation Language，数据操纵语言）用来查询或者变更<br>表中的记录。包含指令：</p>
+<ul>
+<li>SELECT：查询表中的数据</li>
+<li>INSERT：向表中插入新数据</li>
+<li>UPDATE：更新表中的数据</li>
+<li>DELETE：删除表中的数据</li>
+</ul>
+</li>
+<li><p>DCL（Data Control Language，数据控制语言）用来确认或者取消对数据<br>库中的数据进行的变更。除此之外，还可以对 RDBMS 的用户是否有权限<br>操作数据库中的对象（数据库表等）进行设定。包含指令：</p>
+<ul>
+<li>COMMIT： 确认对数据库中的数据进行的变更</li>
+<li>ROLLBACK： 取消对数据库中的数据进行的变更</li>
+<li>GRANT： 赋予用户操作权限</li>
+<li>REVOKE： 取消用户的操作权限</li>
+</ul>
+</li>
+</ul>
 <h4 id="SQL-的基本书写规则"><a href="#SQL-的基本书写规则" class="headerlink" title="SQL 的基本书写规则"></a>SQL 的基本书写规则</h4><ul>
 <li>以分号（；）结尾</li>
 <li>SQL 不区分关键字大小写；表中数据区分大小写</li>
@@ -758,13 +804,180 @@
 </ul>
 </li>
 </ul>
-<h2 id="数据更新"><a href="#数据更新" class="headerlink" title="数据更新"></a>数据更新</h2><h3 id="数据的插入（INSERT语句的使用方法）"><a href="#数据的插入（INSERT语句的使用方法）" class="headerlink" title="数据的插入（INSERT语句的使用方法）"></a>数据的插入（INSERT语句的使用方法）</h3><p>什么是INSERT<br>INSERT语句的基本语法<br>列清单的省略<br>插入NULL<br>插入默认值<br>从其他表中复制数据</p>
-<h3 id="数据的删除（DELETE语句的使用方法）"><a href="#数据的删除（DELETE语句的使用方法）" class="headerlink" title="数据的删除（DELETE语句的使用方法）"></a>数据的删除（DELETE语句的使用方法）</h3><p>DROP TABLE语句和DELETE语句<br>DELETE语句的基本语法<br>指定删除对象的DELETE语句（搜索型DELETE）</p>
-<h3 id="数据的更新（UPDATE语句的使用方法）"><a href="#数据的更新（UPDATE语句的使用方法）" class="headerlink" title="数据的更新（UPDATE语句的使用方法）"></a>数据的更新（UPDATE语句的使用方法）</h3><p>UPDATE语句的基本语法<br>指定条件的UPDATE语句（搜索型UPDATE）<br>使用NULL进行更新<br>多列更新</p>
-<h3 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h3><p>什么是事务<br>创建事务<br>ACID特性</p>
-<h2 id="复杂查询"><a href="#复杂查询" class="headerlink" title="复杂查询"></a>复杂查询</h2><h3 id="视图"><a href="#视图" class="headerlink" title="视图"></a>视图</h3><p>视图和表<br>创建视图的方法<br>视图的限制①——定义视图时不能使用ORDER BY子句<br>视图的限制②——对视图进行更新<br>删除视图</p>
-<h3 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h3><p>子查询和视图<br>子查询的名称<br>标量子查询<br>标量子查询的书写位置<br>使用标量子查询时的注意事项</p>
-<h3 id="关联子查询"><a href="#关联子查询" class="headerlink" title="关联子查询"></a>关联子查询</h3><p>普通的子查询和关联子查询的区别<br>关联子查询也是用来对集合进行切分的<br>结合条件一定要写在子查询中</p>
+<h2 id="数据更新"><a href="#数据更新" class="headerlink" title="数据更新"></a>数据更新</h2><h3 id="数据的插入（INSERT语句的使用方法）"><a href="#数据的插入（INSERT语句的使用方法）" class="headerlink" title="数据的插入（INSERT语句的使用方法）"></a>数据的插入（INSERT语句的使用方法）</h3><h4 id="INSERT-语句"><a href="#INSERT-语句" class="headerlink" title="INSERT 语句"></a>INSERT 语句</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &lt;表名&gt; (列<span class="number">1</span>, 列<span class="number">2</span>, 列<span class="number">3</span>, ……) <span class="keyword">VALUES</span> (值<span class="number">1</span>, 值<span class="number">2</span>, 值<span class="number">3</span>, ……);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>原则上，执行一次INSERT语句会插入一行数据,表名后面的列清单和 VALUES 子句中的值清单的列数必须保持一致</p>
+</li>
+<li><p>很多 RDBMS 都支持多行 INSERT：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &lt;表名&gt; (列<span class="number">1</span>, 列<span class="number">2</span>, 列<span class="number">3</span>, ……) <span class="keyword">VALUES</span> (值<span class="number">1</span>, 值<span class="number">2</span>, 值<span class="number">3</span>, ……), (值<span class="number">1</span>, 值<span class="number">2</span>, 值<span class="number">3</span>, ……) …… ;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>列清单的省略</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &lt;表名&gt; <span class="keyword">VALUES</span> (值<span class="number">1</span>, 值<span class="number">2</span>, 值<span class="number">3</span>, ……), (值<span class="number">1</span>, 值<span class="number">2</span>, 值<span class="number">3</span>, ……) …… ;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>插入NULL：插入 NOT NULL 约束的列会报错</p>
+</li>
+<li><p>INSERT， DELETE 和 UPDATE 等更新语句也一样，SQL 语句执行失败时都不会对表中数据造成影响</p>
+</li>
+<li><p>默认插入值<br>在创建表的 CREATE TABLE 语句中设置 DEFAULT 约束来设定默认值：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> ProductIns</span><br><span class="line">(&lt;列名&gt; <span class="built_in">CHAR</span>(<span class="number">4</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line"> &lt;列名&gt; <span class="built_in">INTEGER</span> <span class="keyword">DEFAULT</span> <span class="number">0</span>, <span class="comment">-- 销售单价的默认值设定为0;</span></span><br><span class="line">……);</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<ul>
+<li><p>显式方法插入默认值：在 VALUES 中指定 DEFAULT 关键字</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &lt;表名&gt; (&lt;列名<span class="number">1</span>&gt;, &lt;列名<span class="number">2</span>&gt;, ……) <span class="keyword">VALUES</span> (<span class="keyword">DEFAULT</span>, <span class="keyword">DEFAULT</span>, ……);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>隐式方法插入默认值：在列清单和 VALUES 中省略要设定默认值的列</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &lt;表名&gt; (&lt;列名<span class="number">1</span>&gt;, &lt;列名<span class="number">3</span>&gt;, ……) <span class="keyword">VALUES</span> (<span class="keyword">DEFAULT</span>, <span class="keyword">DEFAULT</span>, ……); <span class="comment">-- 列2设定默认值</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="从其他表中复制数据"><a href="#从其他表中复制数据" class="headerlink" title="从其他表中复制数据"></a>从其他表中复制数据</h4><ol>
+<li><p>创建一张结构一样的表</p>
+</li>
+<li><p>旧表数据插入新表：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> 旧表 (&lt;列名<span class="number">1</span>&gt;, &lt;列名<span class="number">2</span>&gt;, ……)</span><br><span class="line"><span class="keyword">SELECT</span> &lt;列名<span class="number">1</span>&gt;, &lt;列名<span class="number">2</span>&gt;, ……</span><br><span class="line"><span class="keyword">FROM</span> 新表;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>INSERT 语句的 SELECT 语句中，可以使用 WHERE 子句或者 GROUP BY 子句等何 SQL 语法（除 ORDER BY）</li>
+<li>指定 ORDER BY 子句也没有任何意义，因为无法保证表内部记录的排列顺序</li>
+</ul>
+<h3 id="数据的删除（DELETE语句的使用方法）"><a href="#数据的删除（DELETE语句的使用方法）" class="headerlink" title="数据的删除（DELETE语句的使用方法）"></a>数据的删除（DELETE语句的使用方法）</h3><h4 id="DELETE语句"><a href="#DELETE语句" class="headerlink" title="DELETE语句"></a>DELETE语句</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> &lt;表名&gt;; <span class="comment">-- 保留数据表，清空表全部数据</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> &lt;表名&gt; <span class="comment">-- 删除表中指定条件数据</span></span><br><span class="line"> <span class="keyword">WHERE</span> &lt;条件&gt;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
+<li>DELETE 语句中只能使用 WHERE，而不能使用 GROUP BY、HAVING 和 ORDER BY。因为：<ul>
+<li>GROUP BY 和 HAVING 是从表中选取数据时用来改变抽取数据形式的</li>
+<li>ORDER BY 是用来指定取得结果显示顺序的</li>
+</ul>
+</li>
+</ul>
+<h4 id="TRUNCATE：删除表中全部数据"><a href="#TRUNCATE：删除表中全部数据" class="headerlink" title="TRUNCATE：删除表中全部数据"></a>TRUNCATE：删除表中全部数据</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">TRUNCATE</span> &lt;表名&gt;;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>非标准SQL；Oracle、 SQL Server、PostgreSQL、MySQL 和 DB2</li>
+<li>不能通过 WHERE 子句指定条件来删除部分数据</li>
+</ul>
+<h3 id="数据的更新（UPDATE语句的使用方法）"><a href="#数据的更新（UPDATE语句的使用方法）" class="headerlink" title="数据的更新（UPDATE语句的使用方法）"></a>数据的更新（UPDATE语句的使用方法）</h3><h4 id="UPDATE-语句"><a href="#UPDATE-语句" class="headerlink" title="UPDATE 语句"></a>UPDATE 语句</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> &lt;表名&gt;</span><br><span class="line">   <span class="keyword">SET</span> &lt;列名&gt; = &lt;表达式/<span class="literal">NULL</span>&gt; <span class="comment">-- NULL 只限于未设置 NOT NULL 约束的列</span></span><br><span class="line"> <span class="keyword">WHERE</span> &lt;条件&gt;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="多列更新"><a href="#多列更新" class="headerlink" title="多列更新"></a>多列更新</h4><ul>
+<li>法一：所有 DBMS 通用</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 使用逗号对列进行分隔排列</span></span><br><span class="line"><span class="keyword">UPDATE</span> &lt;表名&gt;</span><br><span class="line">   <span class="keyword">SET</span> &lt;列名<span class="number">1</span>&gt; = &lt;表达式<span class="number">1</span>&gt;,</span><br><span class="line">       &lt;列名<span class="number">2</span>&gt; = &lt;表达式<span class="number">2</span>&gt;</span><br><span class="line"> <span class="keyword">WHERE</span> &lt;条件&gt;;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>法二：非通用</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 将列用()括起来的清单形式</span></span><br><span class="line"><span class="keyword">UPDATE</span> Product</span><br><span class="line">   <span class="keyword">SET</span> (列名<span class="number">1</span>, 列名<span class="number">2</span>) = (表达式<span class="number">1</span>, 表达式<span class="number">2</span>)</span><br><span class="line"> <span class="keyword">WHERE</span> &lt;条件&gt;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h3><h4 id="什么是事务"><a href="#什么是事务" class="headerlink" title="什么是事务"></a>什么是事务</h4><p>需要在同一个处理单元中执行的一系列更新处理的集合。例如：</p>
+<blockquote>
+<p>现要求完成往表1插入新数据并更新一些旧数据的任务。要完成该任务，插入和更新两种操作都要完成，则一定要使用事务进行处理（将一起要完成的操作打包进一个事务中进行处理）</p>
+</blockquote>
+<h4 id="创建事务"><a href="#创建事务" class="headerlink" title="创建事务"></a>创建事务</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">事务开始语句;</span><br><span class="line">DML语句①;</span><br><span class="line">DML语句②;</span><br><span class="line">……</span><br><span class="line">事务结束语句（ <span class="keyword">COMMIT</span>或者<span class="keyword">ROLLBACK</span>） ;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>在标准 SQL 中并没有定义事务的<strong>开始语句</strong>，而是由各个 DBMS 自己来定义的</p>
+<ul>
+<li>SQL Server、PostgreSQL：<blockquote>
+<p>BEGIN TRANSACTIONBEGIN TRANSACTION</p>
+</blockquote>
+</li>
+<li>MySQL：<blockquote>
+<p>START TRANSACTION</p>
+</blockquote>
+</li>
+<li>Oracle、DB2：无</li>
+</ul>
+<p>实际上，几乎所有的数据库产品的事务都无需开始指令。因为大部分情况下，事务在数据库连接建立时就已经开始，并不需要用户再明确发出开始指令</p>
+</li>
+<li><p>事务<strong>结束语句</strong>在所有的 RDBMS 中都是通用，只有 COMMIT 和 ROLLBACK 两种：</p>
+<ul>
+<li>COMMIT – 是提交事务包含的全部更新处理的结束指令，相当于文件处理中的覆盖保存。一旦提交，就无法恢复到事务开始前的状态了</li>
+<li>ROLLBACK – 是取消事务包含的全部更新处理的结束指令，相当于文件处理中的放弃保存。一旦回滚，数据库就会恢复到事务开始之前的状态</li>
+</ul>
+</li>
+<li><p>在不使用指令而悄悄开始事务的情况下，区分各个事务有以下两种模式（通常 DBMS 都可以设置任选其一）：</p>
+<ul>
+<li>自动提交模式 – 每条SQL语句就是一个事务（MySQL、SQL Server 和 PostgreSQL 默认使用）</li>
+<li>直到用户执行 COMMIT 或者 ROLLBACK 为止算作一个事务（Oracle 默认使用）</li>
+</ul>
+</li>
+<li><p>若使用 DELETE 语句删除了数据表：</p>
+<ul>
+<li>自动提交模式下，无法回滚恢复</li>
+<li>非自动提交模式下，可以通过 ROLLBACK 命令取消该事务的处理，恢复表中的数据。但这仅限于明示开始事务，或者关闭自动提交的情况</li>
+</ul>
+</li>
+</ul>
+<h4 id="ACID特性"><a href="#ACID特性" class="headerlink" title="ACID特性"></a>ACID特性</h4><ul>
+<li><p>原子性（Atomicity）</p>
+<p>原子性是指在事务结束时，其中所包含的更新处理要么都执行，要么都不执行</p>
+</li>
+<li><p>一致性（Consistency）/完整性</p>
+<p>一致性指的是事务中包含的处理要满足数据库提前设置的约束</p>
+</li>
+<li><p>隔离性（Isolation）</p>
+<p>隔离性指的是保证不同事务之间互不干扰的特性。该特性保证了事务之间不会互相嵌套。此外，在某个事务中进行的更改，在该事务结束之前，对其他事务而言是不可见的</p>
+</li>
+<li><p>持久性（Durability）</p>
+<p>持久性指的是在事务（不论是提交还是回滚）结束后， DBMS 能够保证该时间点的数据状态会被保存的特性。即使由于系统故障导致数据丢失，数据库也一定能通过某种手段进行恢复，如日志系统</p>
+</li>
+</ul>
+<h2 id="复杂查询"><a href="#复杂查询" class="headerlink" title="复杂查询"></a>复杂查询</h2><h3 id="视图"><a href="#视图" class="headerlink" title="视图"></a>视图</h3><h4 id="视图：保存好的-SELECT-语句"><a href="#视图：保存好的-SELECT-语句" class="headerlink" title="视图：保存好的 SELECT 语句"></a>视图：保存好的 SELECT 语句</h4><ul>
+<li>视图和表区别：表中存储的是实际数据，而视图中保存的是从表中取出数据所使用的SELECT语句</li>
+<li>视图的优点：<ul>
+<li>无需保存数据，节省存储设备的容量</li>
+<li>将频繁使用的 SELECT 语句保存成视图，不用重写重新执行，以提高效率</li>
+</ul>
+</li>
+</ul>
+<h4 id="创建视图"><a href="#创建视图" class="headerlink" title="创建视图"></a>创建视图</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> 视图名称(&lt;视图列名<span class="number">1</span>&gt;, &lt;视图列名<span class="number">2</span>&gt;, ……)</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line">&lt;<span class="keyword">SELECT</span>语句&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>SELECT 语句中列的排列顺序和视图中列的排列顺序相同</li>
+<li>多重视图：以视图为基础创建视图。多重视图会降低 SQL 的性能应尽量避免</li>
+</ul>
+<h4 id="使用视图查询"><a href="#使用视图查询" class="headerlink" title="使用视图查询"></a>使用视图查询</h4><ol>
+<li>首先执行定义视图的 SELECT 语句</li>
+<li>根据得到的结果，再执行在 FROM 子句中使用视图的 SELECT 语句</li>
+</ol>
+<h4 id="视图的限制"><a href="#视图的限制" class="headerlink" title="视图的限制"></a>视图的限制</h4><ul>
+<li><p>定义视图时不能使用 ORDER BY 子句</p>
+<p>视图和表一样， 数据行都是没有顺序的</p>
+</li>
+<li><p>对视图进行更新</p>
+<p>标准 SQL 中规定，想要视图可以被更新，定义视图的 SELECT 语句需要满足某些条件（非通过汇总）：</p>
+<ul>
+<li>SELECT 子句中未使用 DISTINCT</li>
+<li>FROM 子句中只有一张表</li>
+<li>未使用 GROUP BY 子句</li>
+<li>未使用 HAVING 子句</li>
+</ul>
+<p>原因：视图和表需要同时进行更新，以保持数据一致性，因此通过汇总得到的视图无法进行更新</p>
+</li>
+</ul>
+<h4 id="删除视图"><a href="#删除视图" class="headerlink" title="删除视图"></a>删除视图</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">VIEW</span> 视图名称(&lt;视图列名<span class="number">1</span>&gt;, &lt;视图列名<span class="number">2</span>&gt;, ……)；</span><br></pre></td></tr></table></figure>
+
+<h3 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h3><h4 id="子查询和视图"><a href="#子查询和视图" class="headerlink" title="子查询和视图"></a>子查询和视图</h4><p>子查询就是将用来定义视图的 SELECT 语句直接用于 FROM 子句当中（为查询结果命别名）</p>
+<ul>
+<li>子查询作为内层查询会首先执行</li>
+<li>原则上子查询必须设定名称（使用 AS 关键字）</li>
+</ul>
+<h4 id="标量子查询"><a href="#标量子查询" class="headerlink" title="标量子查询"></a>标量子查询</h4><p>标量子查询就是返回单一值的子查询</p>
+<ul>
+<li>优点：返回的是单一值，可以用在 = 或者 &lt;&gt; 等比较运算符之中</li>
+<li>书写位置：能够使用常数或者列名的地方</li>
+<li>注意事项：子查询中只能返回单一值</li>
+</ul>
+<h3 id="关联子查询（建议刷题理解）"><a href="#关联子查询（建议刷题理解）" class="headerlink" title="关联子查询（建议刷题理解）"></a>关联子查询（建议刷题理解）</h3><h4 id="与普通的子查询的区别"><a href="#与普通的子查询的区别" class="headerlink" title="与普通的子查询的区别"></a>与普通的子查询的区别</h4><p>在子查询中添加的 WHERE 子句的条件</p>
+<ul>
+<li>为区别表对应不同的场景，在表所对应的列名之前加上表的别名，形式为“&lt;表名&gt;.&lt;列名&gt;”</li>
+<li>适合在细分的组内进行比较时使用</li>
+<li>结合条件一定要写在子查询中</li>
+</ul>
 <h2 id="函数、谓词、CASE表达式"><a href="#函数、谓词、CASE表达式" class="headerlink" title="函数、谓词、CASE表达式"></a>函数、谓词、CASE表达式</h2><h3 id="各种各样的函数"><a href="#各种各样的函数" class="headerlink" title="各种各样的函数"></a>各种各样的函数</h3><p>函数的种类<br>算术函数<br>字符串函数<br>日期函数<br>转换函数</p>
 <h3 id="谓词"><a href="#谓词" class="headerlink" title="谓词"></a>谓词</h3><p>什么是谓词<br>LIKE谓词——字符串的部分一致查询<br>BETWEENT谓词——范围查询<br>IS NULL、IS NOT NULL——判断是否为NULL<br>IN谓词——OR的简便用法<br>使用子查询作为IN谓词的参数<br>EXIST谓词</p>
 <h3 id="CASE表达式"><a href="#CASE表达式" class="headerlink" title="CASE表达式"></a>CASE表达式</h3><p>什么是CASE表达式<br>CASE表达式的语法<br>CASE表达式的使用方法</p>
@@ -820,10 +1033,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/05/computer-struct/" rel="prev" title="计算机组成原理">
-                计算机组成原理 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -1008,7 +1217,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SQL-基础"><span class="nav-number">1.</span> <span class="nav-text">SQL 基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库和SQL"><span class="nav-number">1.1.</span> <span class="nav-text">数据库和SQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库是什么"><span class="nav-number">1.1.1.</span> <span class="nav-text">数据库是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-DBMS"><span class="nav-number">1.1.2.</span> <span class="nav-text">Why DBMS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DBMS-种类"><span class="nav-number">1.1.3.</span> <span class="nav-text">DBMS 种类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#关系数据库（Relational-Database，-RDB）"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">关系数据库（Relational Database， RDB）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#键值存储系统（Key-Value-Store，-KVS）"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">键值存储系统（Key-Value Store， KVS）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#面向对象数据库（Object-Oriented-Database，-OODB）"><span class="nav-number">1.1.3.3.</span> <span class="nav-text">面向对象数据库（Object Oriented Database， OODB）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#XML-数据库（XML-Database，-XMLDB）"><span class="nav-number">1.1.3.4.</span> <span class="nav-text">XML 数据库（XML Database， XMLDB）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#层次数据库（Hierarchical-Database，-HDB）"><span class="nav-number">1.1.3.5.</span> <span class="nav-text">层次数据库（Hierarchical Database， HDB）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库的结构"><span class="nav-number">1.1.4.</span> <span class="nav-text">数据库的结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#RDBMS的常见系统结构"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">RDBMS的常见系统结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表的结构"><span class="nav-number">1.1.4.2.</span> <span class="nav-text">表的结构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SQL概要"><span class="nav-number">1.1.5.</span> <span class="nav-text">SQL概要</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#SQL-的基本书写规则"><span class="nav-number">1.1.5.1.</span> <span class="nav-text">SQL 的基本书写规则</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表的创建"><span class="nav-number">1.1.6.</span> <span class="nav-text">表的创建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据库的创建（CREATE-DATABASE语句）"><span class="nav-number">1.1.6.1.</span> <span class="nav-text">数据库的创建（CREATE DATABASE语句）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表的创建（CREATE-TABLE语句）"><span class="nav-number">1.1.6.2.</span> <span class="nav-text">表的创建（CREATE TABLE语句）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命名规则"><span class="nav-number">1.1.6.3.</span> <span class="nav-text">命名规则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据类型的指定"><span class="nav-number">1.1.6.4.</span> <span class="nav-text">数据类型的指定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#约束的设置"><span class="nav-number">1.1.6.5.</span> <span class="nav-text">约束的设置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表的删除和更新"><span class="nav-number">1.1.7.</span> <span class="nav-text">表的删除和更新</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#表的删除（DROP-TABLE语句）"><span class="nav-number">1.1.7.1.</span> <span class="nav-text">表的删除（DROP TABLE语句）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表定义的更新（ALTER-TABLE语句）"><span class="nav-number">1.1.7.2.</span> <span class="nav-text">表定义的更新（ALTER TABLE语句）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查询基础"><span class="nav-number">1.2.</span> <span class="nav-text">查询基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SELECT语句基础"><span class="nav-number">1.2.1.</span> <span class="nav-text">SELECT语句基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#列的查询"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">列的查询</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#为列设定别名"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">为列设定别名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#从结果中删除重复行"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">从结果中删除重复行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#通过-WHERE-子句来指定查询数据的条件"><span class="nav-number">1.2.1.4.</span> <span class="nav-text">通过 WHERE 子句来指定查询数据的条件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注释的书写方法"><span class="nav-number">1.2.1.5.</span> <span class="nav-text">注释的书写方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#算术运算符和比较运算符"><span class="nav-number">1.2.2.</span> <span class="nav-text">算术运算符和比较运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#算术运算符"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">算术运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#比较运算符"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">比较运算符</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">1.2.3.</span> <span class="nav-text">逻辑运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#NOT运算符"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">NOT运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AND-运算符和-OR-运算符"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">AND 运算符和 OR 运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#真值"><span class="nav-number">1.2.3.3.</span> <span class="nav-text">真值</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#聚合与排序"><span class="nav-number">1.3.</span> <span class="nav-text">聚合与排序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#对表进行聚合查询"><span class="nav-number">1.3.1.</span> <span class="nav-text">对表进行聚合查询</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#聚合函数"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">聚合函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用聚合函数删除重复值（关键字DISTINCT）"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">使用聚合函数删除重复值（关键字DISTINCT）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对表进行分组"><span class="nav-number">1.3.2.</span> <span class="nav-text">对表进行分组</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#GROUP-BY"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">GROUP BY</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用聚合函数和-GROUP-BY-注意事项"><span class="nav-number">1.3.3.</span> <span class="nav-text">使用聚合函数和 GROUP BY 注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为聚合结果指定条件"><span class="nav-number">1.3.4.</span> <span class="nav-text">为聚合结果指定条件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#HAVING-子句"><span class="nav-number">1.3.4.1.</span> <span class="nav-text">HAVING 子句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HAVING-注意事项"><span class="nav-number">1.3.4.2.</span> <span class="nav-text">HAVING 注意事项</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对查询结果进行排序"><span class="nav-number">1.3.5.</span> <span class="nav-text">对查询结果进行排序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ORDER-BY子句"><span class="nav-number">1.3.5.1.</span> <span class="nav-text">ORDER BY子句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ORDER-BY-注意事项"><span class="nav-number">1.3.5.2.</span> <span class="nav-text">ORDER BY 注意事项</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据更新"><span class="nav-number">1.4.</span> <span class="nav-text">数据更新</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据的插入（INSERT语句的使用方法）"><span class="nav-number">1.4.1.</span> <span class="nav-text">数据的插入（INSERT语句的使用方法）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据的删除（DELETE语句的使用方法）"><span class="nav-number">1.4.2.</span> <span class="nav-text">数据的删除（DELETE语句的使用方法）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据的更新（UPDATE语句的使用方法）"><span class="nav-number">1.4.3.</span> <span class="nav-text">数据的更新（UPDATE语句的使用方法）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务"><span class="nav-number">1.4.4.</span> <span class="nav-text">事务</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复杂查询"><span class="nav-number">1.5.</span> <span class="nav-text">复杂查询</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#视图"><span class="nav-number">1.5.1.</span> <span class="nav-text">视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#子查询"><span class="nav-number">1.5.2.</span> <span class="nav-text">子查询</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联子查询"><span class="nav-number">1.5.3.</span> <span class="nav-text">关联子查询</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数、谓词、CASE表达式"><span class="nav-number">1.6.</span> <span class="nav-text">函数、谓词、CASE表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#各种各样的函数"><span class="nav-number">1.6.1.</span> <span class="nav-text">各种各样的函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#谓词"><span class="nav-number">1.6.2.</span> <span class="nav-text">谓词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CASE表达式"><span class="nav-number">1.6.3.</span> <span class="nav-text">CASE表达式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#集合运算"><span class="nav-number">1.7.</span> <span class="nav-text">集合运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#表的加减法"><span class="nav-number">1.7.1.</span> <span class="nav-text">表的加减法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#联结（以列为单位对表进行联结）"><span class="nav-number">1.7.2.</span> <span class="nav-text">联结（以列为单位对表进行联结）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SQL-高级处理"><span class="nav-number">1.8.</span> <span class="nav-text">SQL 高级处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#窗口函数"><span class="nav-number">1.8.1.</span> <span class="nav-text">窗口函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GROUPING运算符"><span class="nav-number">1.8.2.</span> <span class="nav-text">GROUPING运算符</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SQL-基础"><span class="nav-number">1.</span> <span class="nav-text">SQL 基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库和SQL"><span class="nav-number">1.1.</span> <span class="nav-text">数据库和SQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库是什么"><span class="nav-number">1.1.1.</span> <span class="nav-text">数据库是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-DBMS"><span class="nav-number">1.1.2.</span> <span class="nav-text">Why DBMS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DBMS-种类"><span class="nav-number">1.1.3.</span> <span class="nav-text">DBMS 种类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#关系数据库（Relational-Database，-RDB）"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">关系数据库（Relational Database， RDB）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#键值存储系统（Key-Value-Store，-KVS）"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">键值存储系统（Key-Value Store， KVS）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#面向对象数据库（Object-Oriented-Database，-OODB）"><span class="nav-number">1.1.3.3.</span> <span class="nav-text">面向对象数据库（Object Oriented Database， OODB）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#XML-数据库（XML-Database，-XMLDB）"><span class="nav-number">1.1.3.4.</span> <span class="nav-text">XML 数据库（XML Database， XMLDB）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#层次数据库（Hierarchical-Database，-HDB）"><span class="nav-number">1.1.3.5.</span> <span class="nav-text">层次数据库（Hierarchical Database， HDB）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库的结构"><span class="nav-number">1.1.4.</span> <span class="nav-text">数据库的结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#RDBMS的常见系统结构"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">RDBMS的常见系统结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表的结构"><span class="nav-number">1.1.4.2.</span> <span class="nav-text">表的结构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SQL-概要"><span class="nav-number">1.1.5.</span> <span class="nav-text">SQL 概要</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#标准-SQL"><span class="nav-number">1.1.5.1.</span> <span class="nav-text">标准 SQL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SQL-语句及其种类"><span class="nav-number">1.1.5.2.</span> <span class="nav-text">SQL 语句及其种类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SQL-的基本书写规则"><span class="nav-number">1.1.5.3.</span> <span class="nav-text">SQL 的基本书写规则</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表的创建"><span class="nav-number">1.1.6.</span> <span class="nav-text">表的创建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据库的创建（CREATE-DATABASE语句）"><span class="nav-number">1.1.6.1.</span> <span class="nav-text">数据库的创建（CREATE DATABASE语句）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表的创建（CREATE-TABLE语句）"><span class="nav-number">1.1.6.2.</span> <span class="nav-text">表的创建（CREATE TABLE语句）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命名规则"><span class="nav-number">1.1.6.3.</span> <span class="nav-text">命名规则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据类型的指定"><span class="nav-number">1.1.6.4.</span> <span class="nav-text">数据类型的指定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#约束的设置"><span class="nav-number">1.1.6.5.</span> <span class="nav-text">约束的设置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表的删除和更新"><span class="nav-number">1.1.7.</span> <span class="nav-text">表的删除和更新</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#表的删除（DROP-TABLE语句）"><span class="nav-number">1.1.7.1.</span> <span class="nav-text">表的删除（DROP TABLE语句）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表定义的更新（ALTER-TABLE语句）"><span class="nav-number">1.1.7.2.</span> <span class="nav-text">表定义的更新（ALTER TABLE语句）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查询基础"><span class="nav-number">1.2.</span> <span class="nav-text">查询基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SELECT语句基础"><span class="nav-number">1.2.1.</span> <span class="nav-text">SELECT语句基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#列的查询"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">列的查询</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#为列设定别名"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">为列设定别名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#从结果中删除重复行"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">从结果中删除重复行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#通过-WHERE-子句来指定查询数据的条件"><span class="nav-number">1.2.1.4.</span> <span class="nav-text">通过 WHERE 子句来指定查询数据的条件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注释的书写方法"><span class="nav-number">1.2.1.5.</span> <span class="nav-text">注释的书写方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#算术运算符和比较运算符"><span class="nav-number">1.2.2.</span> <span class="nav-text">算术运算符和比较运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#算术运算符"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">算术运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#比较运算符"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">比较运算符</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">1.2.3.</span> <span class="nav-text">逻辑运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#NOT运算符"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">NOT运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AND-运算符和-OR-运算符"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">AND 运算符和 OR 运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#真值"><span class="nav-number">1.2.3.3.</span> <span class="nav-text">真值</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#聚合与排序"><span class="nav-number">1.3.</span> <span class="nav-text">聚合与排序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#对表进行聚合查询"><span class="nav-number">1.3.1.</span> <span class="nav-text">对表进行聚合查询</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#聚合函数"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">聚合函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用聚合函数删除重复值（关键字DISTINCT）"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">使用聚合函数删除重复值（关键字DISTINCT）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对表进行分组"><span class="nav-number">1.3.2.</span> <span class="nav-text">对表进行分组</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#GROUP-BY"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">GROUP BY</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用聚合函数和-GROUP-BY-注意事项"><span class="nav-number">1.3.3.</span> <span class="nav-text">使用聚合函数和 GROUP BY 注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为聚合结果指定条件"><span class="nav-number">1.3.4.</span> <span class="nav-text">为聚合结果指定条件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#HAVING-子句"><span class="nav-number">1.3.4.1.</span> <span class="nav-text">HAVING 子句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HAVING-注意事项"><span class="nav-number">1.3.4.2.</span> <span class="nav-text">HAVING 注意事项</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对查询结果进行排序"><span class="nav-number">1.3.5.</span> <span class="nav-text">对查询结果进行排序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ORDER-BY子句"><span class="nav-number">1.3.5.1.</span> <span class="nav-text">ORDER BY子句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ORDER-BY-注意事项"><span class="nav-number">1.3.5.2.</span> <span class="nav-text">ORDER BY 注意事项</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据更新"><span class="nav-number">1.4.</span> <span class="nav-text">数据更新</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据的插入（INSERT语句的使用方法）"><span class="nav-number">1.4.1.</span> <span class="nav-text">数据的插入（INSERT语句的使用方法）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#INSERT-语句"><span class="nav-number">1.4.1.1.</span> <span class="nav-text">INSERT 语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#从其他表中复制数据"><span class="nav-number">1.4.1.2.</span> <span class="nav-text">从其他表中复制数据</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据的删除（DELETE语句的使用方法）"><span class="nav-number">1.4.2.</span> <span class="nav-text">数据的删除（DELETE语句的使用方法）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DELETE语句"><span class="nav-number">1.4.2.1.</span> <span class="nav-text">DELETE语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注意事项"><span class="nav-number">1.4.2.2.</span> <span class="nav-text">注意事项</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#TRUNCATE：删除表中全部数据"><span class="nav-number">1.4.2.3.</span> <span class="nav-text">TRUNCATE：删除表中全部数据</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据的更新（UPDATE语句的使用方法）"><span class="nav-number">1.4.3.</span> <span class="nav-text">数据的更新（UPDATE语句的使用方法）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#UPDATE-语句"><span class="nav-number">1.4.3.1.</span> <span class="nav-text">UPDATE 语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多列更新"><span class="nav-number">1.4.3.2.</span> <span class="nav-text">多列更新</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务"><span class="nav-number">1.4.4.</span> <span class="nav-text">事务</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是事务"><span class="nav-number">1.4.4.1.</span> <span class="nav-text">什么是事务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建事务"><span class="nav-number">1.4.4.2.</span> <span class="nav-text">创建事务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ACID特性"><span class="nav-number">1.4.4.3.</span> <span class="nav-text">ACID特性</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复杂查询"><span class="nav-number">1.5.</span> <span class="nav-text">复杂查询</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#视图"><span class="nav-number">1.5.1.</span> <span class="nav-text">视图</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#视图：保存好的-SELECT-语句"><span class="nav-number">1.5.1.1.</span> <span class="nav-text">视图：保存好的 SELECT 语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建视图"><span class="nav-number">1.5.1.2.</span> <span class="nav-text">创建视图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用视图查询"><span class="nav-number">1.5.1.3.</span> <span class="nav-text">使用视图查询</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#视图的限制"><span class="nav-number">1.5.1.4.</span> <span class="nav-text">视图的限制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除视图"><span class="nav-number">1.5.1.5.</span> <span class="nav-text">删除视图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#子查询"><span class="nav-number">1.5.2.</span> <span class="nav-text">子查询</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#子查询和视图"><span class="nav-number">1.5.2.1.</span> <span class="nav-text">子查询和视图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#标量子查询"><span class="nav-number">1.5.2.2.</span> <span class="nav-text">标量子查询</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联子查询（建议刷题理解）"><span class="nav-number">1.5.3.</span> <span class="nav-text">关联子查询（建议刷题理解）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#与普通的子查询的区别"><span class="nav-number">1.5.3.1.</span> <span class="nav-text">与普通的子查询的区别</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数、谓词、CASE表达式"><span class="nav-number">1.6.</span> <span class="nav-text">函数、谓词、CASE表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#各种各样的函数"><span class="nav-number">1.6.1.</span> <span class="nav-text">各种各样的函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#谓词"><span class="nav-number">1.6.2.</span> <span class="nav-text">谓词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CASE表达式"><span class="nav-number">1.6.3.</span> <span class="nav-text">CASE表达式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#集合运算"><span class="nav-number">1.7.</span> <span class="nav-text">集合运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#表的加减法"><span class="nav-number">1.7.1.</span> <span class="nav-text">表的加减法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#联结（以列为单位对表进行联结）"><span class="nav-number">1.7.2.</span> <span class="nav-text">联结（以列为单位对表进行联结）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SQL-高级处理"><span class="nav-number">1.8.</span> <span class="nav-text">SQL 高级处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#窗口函数"><span class="nav-number">1.8.1.</span> <span class="nav-text">窗口函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GROUPING运算符"><span class="nav-number">1.8.2.</span> <span class="nav-text">GROUPING运算符</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -1042,14 +1251,28 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2015 – <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-id-card-o"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">xhzs</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">20k</span>
+  
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长">19 分钟</span>
   
 </div>
 
