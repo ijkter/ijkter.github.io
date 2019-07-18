@@ -32,8 +32,31 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>next</tag>
         <tag>github</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[解决 chrome 下 jupyter-notebook 异常问题]]></title>
+    <url>%2F2018%2F01%2F16%2Fchrome-jupyter-exception%2F</url>
+    <content type="text"><![CDATA[[Updated] 本文记录了 chrome 运行 jupyter-notebook 出现异常的问题及解决方法 解决 chrome 下 jupyter-notebook 异常问题问题chrome 下使用 jupyter-notebook 出现以下问题： 按 tab 键补全后自动移至下一单元格 括号自动补全出问题。如：按 “(“ 打印 “(()” 原因开启了某些 chrome 扩展程序所致 解决方法采用排除法测试出引起问题的 chrome 拓展程序，将其关闭]]></content>
+      <categories>
+        <category>chrome 使用问题</category>
+      </categories>
+      <tags>
+        <tag>chrome</tag>
+        <tag>jupyter-notebook</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[解决 chrome 安装插件失败问题]]></title>
+    <url>%2F2018%2F01%2F14%2Fchrome-install-extension%2F</url>
+    <content type="text"><![CDATA[[Updated] 本文记录了 chrome 离线安装插件失败的问题及解决方法 解决 chrome 安装插件失败问题问题chrome 离线安装插件失败。页面左上角显示： Package is invalid:’CRX_HEADER_INVALID’ 解决以安装 example.crx 为例： 备份 example.crx，以防误操作或错误情况 将 example.crx 更改后缀名为 .rar 或 .zip 解压 example.rar(.zip) 到 example 文件夹，文件夹内包含：example.js、icon.png、manifest.json 打开 chrome 拓展页面，右上角开关开启开发者模式后，左上角点击“加载已解压拓展程序”，选择步骤 3 中解压的 example 文件夹，安装成功]]></content>
+      <categories>
+        <category>chrome 使用问题</category>
+      </categories>
+      <tags>
+        <tag>chrome</tag>
       </tags>
   </entry>
   <entry>
