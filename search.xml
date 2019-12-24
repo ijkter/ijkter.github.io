@@ -37,7 +37,7 @@
   <entry>
     <title><![CDATA[Hexo + NexT 的问题汇总]]></title>
     <url>%2F2019%2F06%2F30%2Fhexo_problem_list%2F</url>
-    <content type="text"><![CDATA[[Updating] 本文记录了 Hexo + NexT 使用过程中的一些问题 版本声明 hexo: 3.9.0 next: 7.0.1 local_search 不能用打开首页（本地or线上），打开浏览器开发工具 Network 选项卡，点击首页“搜索”按钮，观察 search.xml 状态： 200 问题：Algolia 问题 解决：主题配置文件中关闭 Algolia 404 其他 问题：存在非法字符 解决：sublime 排查 .md 文件中所存在非法字符 post_meta 不显示更新时间修改主题配置文件，post_meta 模块中设置：123updated: enable: true anotherday: false 数学公式不显示 更换渲染引擎为 hexo-renderer-marked 12npm uninstall hexo-renderer-marked --save # 卸载 hexo 默认引擎 hexo-renderer-markednpm install hexo-renderer-kramed --save Next 配置文件开启 MathJax 找到 math 模块，开启： 1234math： enable： true # 此处设为 true …… 在需要渲染公式的文章开头的 Front-matter 设置 MathJax 123456---title: ……date: ……tags:mathjax: true # 添加此项--- 图片不显示传统的 Makrdown 插入图片的语法无法显示图片。 查阅官方文档，发现可用资源文件来解决。 修改 hexo 的配置文件 _config.yml，将 post_asset_folder 选项设置为 true； 插入图片的语法： 1&#123;% asset_img example.jpg This is an example image %&#125; 在资源文件夹中放入图片 example.jpg 即可。 注：安装 hexo-asset-image 插件，每次新建文章后会自动在 source/_post 文件夹下创建文章同名的资源文件夹： npm install hexo-asset-image —save]]></content>
+    <content type="text"><![CDATA[[Updating] 本文记录了 Hexo + NexT 使用过程中的一些问题 版本声明 hexo: 3.9.0 next: 7.0.1 local_search 不能用打开首页（本地or线上），打开浏览器开发工具 Network 选项卡，点击首页“搜索”按钮，观察 search.xml 状态： 200 问题：Algolia 问题 解决：主题配置文件中关闭 Algolia 404 其他 问题：存在非法字符 解决：sublime 排查 .md 文件中所存在非法字符 post_meta 不显示更新时间修改主题配置文件，post_meta 模块中设置：123updated: enable: true anotherday: false 数学公式不显示 更换渲染引擎为 hexo-renderer-marked 12npm uninstall hexo-renderer-marked --save # 卸载 hexo 默认引擎 hexo-renderer-markednpm install hexo-renderer-kramed --save Next 配置文件开启 MathJax 找到 math 模块，开启： 1234math： enable： true # 此处设为 true …… 在需要渲染公式的文章开头的 Front-matter 设置 MathJax 123456---title: ……date: ……tags:mathjax: true # 添加此项--- 图片不显示传统的 Makrdown 插入图片的语法无法显示图片。 查阅官方文档，发现可用资源文件来解决。 修改 hexo 的配置文件 _config.yml，将 post_asset_folder 选项设置为 true； 插入图片的语法： 1&#123;% asset_img example.jpg This is an example image %&#125; 在资源文件夹中放入图片 example.jpg 即可。 注：安装 hexo-asset-image 插件，每次新建文章后会自动在 source/_post 文件夹下创建文章同名的资源文件夹：1npm install hexo-asset-image --save]]></content>
       <categories>
         <category>blog</category>
       </categories>
@@ -55,8 +55,8 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>next</tag>
         <tag>github</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
