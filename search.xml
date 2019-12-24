@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[hexo 博客从 github 迁至阿里云服务器]]></title>
-    <url>%2F2019%2F11%2F20%2Fhexo-migration%2F</url>
-    <content type="text"><![CDATA[[Updated] 本文记录了 hexo blog 从 github 迁移到阿里云服务器的过程。 起因国内访问 github 速度较慢且时有抽风，恰逢双十一大促购入阿里云 ESC，尝试迁移至云上。 以下是云服务器和客户端本机的配置过程。 云服务器配置过程云服务器基本信息 选择系统： CentOS 7 安全组配置： 阿里云默认不开放 HTTP（80）端口，故需要在阿里云服务器控制台手动添加安全组规则，授权 HTTP（80）端口的访问，否则将无法访问服务器的 web 应用。 git使用 git 配置云服务器代码仓库，创建 git 用户统一管理。 安装yum install git配置 创建 git 用户 12345678# 1. 创建 git 用户，并设置密码sudo adduser gitsudo passwd git# 2. 为 git 用户设置权限chmod 740 /etc/sudoers # 先临时给 sudoers 文件添加写权限，修改完毕后及时收回vi /etc/sudoers # 添加 “git ALL=(ALL) ALL”chmod 400 /etc/sudoers 配置 ssh 123456789101112# 1. 生成 ssh 秘钥mkdir ~/.sshcd ~/.sshssh-keygen # .ssh 文件夹下会生成 id_rsa 和 id_rsa.pub 文件# 2. 设置密钥认证，使客户端可免密连接vi authorized_keys&lt;! 文件内输入本地客户端的 ssh 公钥，即本地客户端 ～/.ssh/id_rsa.pub 文件的内容&gt;# 3. 设置只有 git 用户对 .ssh 文件有读写权限chmod 600 ~/.ssh/authorized_keys chmod 700 ~/.ssh 创建 git 仓库 1234cd ~mkdir repo &amp; cd repo git init --bare hexoBlog.gitsudo chown -R git:git hexoBlog.git # 递归修改文件用户组 设置 hooks 1vi ~/repo/hexoBlog.git/hooks/post-receive 编辑内容为： 1git --work-tree=/home/www/blog --git-dir=/home/git/repo/hexoBlog.git checkout -f 保存退出后，给 post-receive 添加执行权限： 1sudo chmod u+x ~/repo/hexoBlog.git/hooks/post-receive 测试本地客户端通过 ssh 连接能够免密登录： ssh git@&lt;域名/服务器公网 ip 地址&gt;NginxNginx 安装 安装 epel-release，以自动配置 yum 的软件仓库 sudo yum install -y epel-release 安装 sudo yum install -y Nginx Nginx 测试 云服务器中，设置开机启动 Nginx： sudo systemctl enable nginx 使用以下命令启动 Nginx： systemctl nginx start 查看运行状态： sudo systemctl status nginx可以看到进程处于活跃状态和其他相关信息。 在任意浏览器中，访问云服务器公网 ip，若出现 Nginx 欢迎界面，说明 Nginx 安装成功。若没有出现 Nginx 欢迎界面，首先应排查是否安全组未配置，其次观察是否为端口问题（占用或防火墙），再者可观察安装版本，换源/换版本重装。 Nginx 配置注意：因为 yum 源和安装方式不一， Nginx 版本或有不同，配置文件的位置可能会不一样，注意找到对应的文件进行修改。 查看 nginx.conf 下包含的配置文件路径 {% asset_img nginx_conf.png 这是一个新的博客的图片的说明 %} 找到配置文件文件夹在 “conf.d”（即 include 的目录）。 在 “conf.d” 下创建新配置文件 “hexoBlog.conf”，添加以下内容 123456789server &#123; listen 80; # 监听端口 server_name &lt;域名/服务器公网 ip 地址&gt;; location / &#123; root /home/git/www/hexo; # hexo blog 根目录 index index.html; # 索引页，与 hexo 生成的静态索引页应同名 &#125;&#125; 重新加载服务，加载更新后的配置文件： systemctl nginx reload 此处使用 include 方式增加配置文件原因有二： 不破坏原有默认配置文件； 便于以后增删网站配置文件。 本机配置修改hexo修改 hexo 目录下的 _config.yml 文件中的 deploy 模块即可： 1234deploy: type: git repository: git@&lt;域名/服务器公网 ip 地址&gt;:/home/git/repo/hexoBlog.git # git 仓库地址 branch: master 测试发布文章 新建文章 hexo new &quot;test&quot; 生成静态文件 hexo clean # 清除缓存文件和已生成的静态文件 hexo g -d # 生成静态文件并部署，“hexo generate --deploy”的简写 任意客户端通过域名和 ip 进入可看见博客首页即成功。 Issue list 无法访问资源 403 Forbidden. 查看 /etc/Nginx/Nginx.conf 文件中的 “user”，是否为博客所在目录所属用户，修正即可。 若安装 Nginx 时使用 sudo，user 会默认为 root。 定位不到博客文件 查看 conf 文件的 root 目录是否设置正确； 查看 conf 文件的 index 索引页是否设置正确。 博客页面由 hexo 静态生成，对照博客目录下静态生成的页面，查看 index 是否设置错误。]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>云服务器</tag>
-      </tags>
+    <title><![CDATA[hexo-migration]]></title>
+    <url>%2F2019%2F12%2F24%2Fhexo-migration%2F</url>
+    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[Excel 快捷与函数]]></title>
