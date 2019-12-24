@@ -37,7 +37,7 @@
   <entry>
     <title><![CDATA[Hexo + NexT 的问题]]></title>
     <url>%2F2019%2F06%2F30%2Fhexo_problem_list%2F</url>
-    <content type="text"><![CDATA[[Updating] 本文记录了 Hexo + NexT 使用过程中的一些问题 版本声明 hexo: 3.9.0 next: 7.0.1 local_search 不能用打开首页（本地or线上），打开浏览器开发工具 Network 选项卡，点击首页“搜索”按钮，观察 search.xml 状态： 200 问题：Algolia 问题 解决：主题配置文件中关闭 Algolia 404 其他 问题：存在非法字符 解决：sublime 排查 .md 文件中所存在非法字符 post_meta 不显示更新时间修改主题配置文件，post_meta 模块中设置：123updated: enable: true anotherday: false]]></content>
+    <content type="text"><![CDATA[[Updating] 本文记录了 Hexo + NexT 使用过程中的一些问题 版本声明 hexo: 3.9.0 next: 7.0.1 local_search 不能用打开首页（本地or线上），打开浏览器开发工具 Network 选项卡，点击首页“搜索”按钮，观察 search.xml 状态： 200 问题：Algolia 问题 解决：主题配置文件中关闭 Algolia 404 其他 问题：存在非法字符 解决：sublime 排查 .md 文件中所存在非法字符 post_meta 不显示更新时间修改主题配置文件，post_meta 模块中设置：123updated: enable: true anotherday: false 数学公式不显示 更换渲染引擎为 hexo-renderer-marked 12npm uninstall hexo-renderer-marked --save # 卸载 hexo 默认引擎 hexo-renderer-markednpm install hexo-renderer-kramed --save Next 配置文件开启 MathJax 找到 math 模块，开启： 1234math： enable： true # 此处设为 true …… 在需要渲染公式的文章开头的 Front-matter 设置 MathJax 123456---title: ……date: ……tags:mathjax: true # 添加此项--]]></content>
       <categories>
         <category>blog</category>
       </categories>
