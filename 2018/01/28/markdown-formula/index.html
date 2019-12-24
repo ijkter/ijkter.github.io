@@ -457,7 +457,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">2k</span>
+              <span title="本文字数">2.1k</span>
             </span>
           
 
@@ -490,12 +490,12 @@
       
         <p><font color="#008000"> [Updated] </font> 本文记录了 Markdown 数学公式语法</p>
 <a id="more"></a>
-
 <h1 id="Markdown-数学公式语法"><a href="#Markdown-数学公式语法" class="headerlink" title="Markdown 数学公式语法"></a>Markdown 数学公式语法</h1><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><h3 id="公式类型"><a href="#公式类型" class="headerlink" title="公式类型"></a>公式类型</h3><h4 id="行内公式"><a href="#行内公式" class="headerlink" title="行内公式"></a>行内公式</h4><p>将公式插入到本行内。使用一个 “$” 包裹数学公式。</p>
 <p>极限：$\displaystyle \lim_{n \to +\infty}{x_n = \alpha}$</p>
 <h4 id="独行公式"><a href="#独行公式" class="headerlink" title="独行公式"></a>独行公式</h4><p>将公式插入到新的一行内，并且居中。使用两个 “$$” 包裹数学公式。极限：</p>
-<p>$$<br>\displaystyle \lim_{n \to +\infty}{x_n = \alpha}<br>$$</p>
-<h3 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h3><table>
+<script type="math/tex; mode=display">
+\displaystyle \lim_{n \to +\infty}{x_n = \alpha}</script><h3 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>上下标</th>
@@ -503,7 +503,8 @@
 <th>预览</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>^</td>
 <td>x^2</td>
 <td>$x^2$</td>
@@ -513,8 +514,11 @@
 <td>x_1</td>
 <td>$x_1$</td>
 </tr>
-</tbody></table>
-<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><h4 id="普通运算"><a href="#普通运算" class="headerlink" title="普通运算"></a>普通运算</h4><table>
+</tbody>
+</table>
+</div>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><h4 id="普通运算"><a href="#普通运算" class="headerlink" title="普通运算"></a>普通运算</h4><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>运算</th>
@@ -522,7 +526,8 @@
 <th>预览</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>加</td>
 <td>+</td>
 <td>$+$</td>
@@ -559,7 +564,11 @@
 </tr>
 <tr>
 <td>绝对值</td>
-<td>| |</td>
+<td>\</td>
+<td>\</td>
+<td></td>
+<td>$</td>
+<td>x+y</td>
 <td>$</td>
 </tr>
 <tr>
@@ -572,8 +581,11 @@
 <td>{b} \voer {a}</td>
 <td>${b} \over {a}$</td>
 </tr>
-</tbody></table>
-<h4 id="对数运算"><a href="#对数运算" class="headerlink" title="对数运算"></a>对数运算</h4><table>
+</tbody>
+</table>
+</div>
+<h4 id="对数运算"><a href="#对数运算" class="headerlink" title="对数运算"></a>对数运算</h4><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>运算</th>
@@ -581,7 +593,8 @@
 <th>预览</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>对数</td>
 <td>\log</td>
 <td>$\log$</td>
@@ -596,8 +609,11 @@
 <td>\lg</td>
 <td>$\lg$</td>
 </tr>
-</tbody></table>
-<h4 id="集合运算"><a href="#集合运算" class="headerlink" title="集合运算"></a>集合运算</h4><table>
+</tbody>
+</table>
+</div>
+<h4 id="集合运算"><a href="#集合运算" class="headerlink" title="集合运算"></a>集合运算</h4><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>运算</th>
@@ -605,7 +621,8 @@
 <th>预览</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>空集</td>
 <td>\emptyset</td>
 <td>$\emptyset$</td>
@@ -660,8 +677,11 @@
 <td>\bigwedge</td>
 <td>$\bigwedge$</td>
 </tr>
-</tbody></table>
-<h4 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h4><table>
+</tbody>
+</table>
+</div>
+<h4 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h4><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>运算</th>
@@ -669,7 +689,8 @@
 <th>预览</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>因为</td>
 <td>\because</td>
 <td>$\because$</td>
@@ -699,8 +720,11 @@
 <td>\not\subset</td>
 <td>$\not\subset$</td>
 </tr>
-</tbody></table>
-<h4 id="微积分运算"><a href="#微积分运算" class="headerlink" title="微积分运算"></a>微积分运算</h4><table>
+</tbody>
+</table>
+</div>
+<h4 id="微积分运算"><a href="#微积分运算" class="headerlink" title="微积分运算"></a>微积分运算</h4><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>运算</th>
@@ -708,7 +732,8 @@
 <th>预览</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>极限</td>
 <td>\lim</td>
 <td>$\lim$</td>
@@ -733,8 +758,11 @@
 <td>\oint</td>
 <td>$\oint$</td>
 </tr>
-</tbody></table>
-<h4 id="三角函数"><a href="#三角函数" class="headerlink" title="三角函数"></a>三角函数</h4><table>
+</tbody>
+</table>
+</div>
+<h4 id="三角函数"><a href="#三角函数" class="headerlink" title="三角函数"></a>三角函数</h4><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>运算</th>
@@ -742,7 +770,8 @@
 <th>预览</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>度数</td>
 <td>90^\circ</td>
 <td>$90^\circ$</td>
@@ -767,8 +796,11 @@
 <td>\tan</td>
 <td>$\tan$</td>
 </tr>
-</tbody></table>
-<h3 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h3><table>
+</tbody>
+</table>
+</div>
+<h3 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>字母</th>
@@ -776,7 +808,8 @@
 <th>预览</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>Δ</td>
 <td>\Delta</td>
 <td>$\Delta$</td>
@@ -881,16 +914,22 @@
 <td>\rho</td>
 <td>$\rho$</td>
 </tr>
-</tbody></table>
-<h3 id="栗子"><a href="#栗子" class="headerlink" title="栗子"></a>栗子</h3><h4 id="求和公式"><a href="#求和公式" class="headerlink" title="求和公式"></a>求和公式</h4><pre><code>\displaystyle \sum_{i=1}^n \frac{1}{i}</code></pre><p>预览：</p>
-<p>$$<br>\displaystyle \sum_{i=1}^n \frac{1}{i}<br>$$</p>
-<h4 id="求积公式"><a href="#求积公式" class="headerlink" title="求积公式"></a>求积公式</h4><pre><code>\displaystyle \prod_{i=1}^n i</code></pre><p>预览：</p>
-<p>$$<br>\displaystyle \prod_{i=1}^n i<br>$$</p>
-<h4 id="求积分"><a href="#求积分" class="headerlink" title="求积分"></a>求积分</h4><pre><code>\displaystyle \int_0^{1} x dx</code></pre><p>预览：</p>
-<p>$$<br>\displaystyle \int_0^{1} x dx<br>$$</p>
-<h4 id="求极限"><a href="#求极限" class="headerlink" title="求极限"></a>求极限</h4><pre><code>\displaystyle \lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}</code></pre><p>预览：</p>
-<p>$$<br>\displaystyle \lim_{n \rightarrow +\infty} \frac{1}{n}<br>$$</p>
-
+</tbody>
+</table>
+</div>
+<h3 id="栗子"><a href="#栗子" class="headerlink" title="栗子"></a>栗子</h3><h4 id="求和公式"><a href="#求和公式" class="headerlink" title="求和公式"></a>求和公式</h4><pre><code>\displaystyle \sum_{i=1}^n \frac{1}{i}
+</code></pre><p>预览：</p>
+<script type="math/tex; mode=display">
+\displaystyle \sum_{i=1}^n \frac{1}{i}</script><h4 id="求积公式"><a href="#求积公式" class="headerlink" title="求积公式"></a>求积公式</h4><pre><code>\displaystyle \prod_{i=1}^n i
+</code></pre><p>预览：</p>
+<script type="math/tex; mode=display">
+\displaystyle \prod_{i=1}^n i</script><h4 id="求积分"><a href="#求积分" class="headerlink" title="求积分"></a>求积分</h4><pre><code>\displaystyle \int_0^{1} x dx
+</code></pre><p>预览：</p>
+<script type="math/tex; mode=display">
+\displaystyle \int_0^{1} x dx</script><h4 id="求极限"><a href="#求极限" class="headerlink" title="求极限"></a>求极限</h4><pre><code>\displaystyle \lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}
+</code></pre><p>预览：</p>
+<script type="math/tex; mode=display">
+\displaystyle \lim_{n \rightarrow +\infty} \frac{1}{n}</script>
       
     </div>
 

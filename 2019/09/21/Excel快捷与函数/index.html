@@ -443,7 +443,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">4.6k</span>
+              <span title="本文字数">4.7k</span>
             </span>
           
 
@@ -476,15 +476,16 @@
       
         <p><font color="#008000"> [Updated] </font> 本文记录了 EXCEL 的高频快捷用法和常用函数</p>
 <a id="more"></a>
-
-<h1 id="Excel-快捷与函数"><a href="#Excel-快捷与函数" class="headerlink" title="Excel 快捷与函数"></a>Excel 快捷与函数</h1><h2 id="1-快捷"><a href="#1-快捷" class="headerlink" title="1 快捷"></a>1 快捷</h2><h3 id="1-1-常用快捷操作"><a href="#1-1-常用快捷操作" class="headerlink" title="1.1 常用快捷操作"></a>1.1 常用快捷操作</h3><table>
+<h1 id="Excel-快捷与函数"><a href="#Excel-快捷与函数" class="headerlink" title="Excel 快捷与函数"></a>Excel 快捷与函数</h1><h2 id="1-快捷"><a href="#1-快捷" class="headerlink" title="1 快捷"></a>1 快捷</h2><h3 id="1-1-常用快捷操作"><a href="#1-1-常用快捷操作" class="headerlink" title="1.1 常用快捷操作"></a>1.1 常用快捷操作</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>Ctrl+方向键</td>
 <td>跳转至选中方向边缘的数据</td>
 </tr>
@@ -516,7 +517,9 @@
 <td>Ctrl+t</td>
 <td>隔行上色</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h3 id="1-2-自动填充"><a href="#1-2-自动填充" class="headerlink" title="1.2 自动填充"></a>1.2 自动填充</h3><p>自动填充数据和函数：</p>
 <ul>
 <li>选中单元格，瞄准右下角时鼠标变为十字准星，向某一方向框选区域进行自动填充</li>
@@ -541,6 +544,7 @@
 <li>AND(条件 1， 条件 2，……)</li>
 <li>OR(条件 1， 条件 2，……)</li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -548,15 +552,19 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>=IF(AND(A1 &gt; 1, A2 &gt; 1), 1, 0)</td>
 <td>A1、A2 都大于 1 则返回 1，否则返回0</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h4 id="2-1-3-COUNT"><a href="#2-1-3-COUNT" class="headerlink" title="2.1.3 COUNT"></a>2.1.3 COUNT</h4><p>计算包含数字的单元格个数以及参数列表中数字的个数:</p>
 <blockquote>
 <p>COUNT(value1, [value2], …)</p>
 </blockquote>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -564,15 +572,19 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>=COUNT(A1:A5)</td>
 <td>返回单元格区域 A1 到 A5 中包含数字的单元格的个数</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h4 id="2-1-4-COUNTIFS"><a href="#2-1-4-COUNTIFS" class="headerlink" title="2.1.4 COUNTIFS"></a>2.1.4 COUNTIFS</h4><p>统计满足所有条件的次数：</p>
 <blockquote>
 <p>COUNTIFS(criteria_range1, criteria1, [criteria_range2, criteria2],…)</p>
 </blockquote>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -580,15 +592,19 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>=COUNTIFS(A2:A17, “=1”, B2:B17, “&gt;1/1/2010”, C2:C17, “&lt;” &amp; D2)</td>
 <td>返回满足“A=1，B 日期晚于 2010-1-1，C &lt; 单元格 D2 数字”条件的单元格的个数</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h4 id="2-1-5-SUMIF"><a href="#2-1-5-SUMIF" class="headerlink" title="2.1.5 SUMIF"></a>2.1.5 SUMIF</h4><p>对范围中符合指定条件的值求和：</p>
 <blockquote>
 <p>SUMIF(range, criteria, [sum_range])</p>
 </blockquote>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -596,7 +612,8 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>=SUMIF(A1:A5, “&gt;100”)</td>
 <td>返回 A1:A5 区域大于 100 的数值之和</td>
 </tr>
@@ -604,11 +621,14 @@
 <td>=SUMIF(A1:A5, “=” &amp; C1, B1:B5)</td>
 <td>返回 A1:A5 中等于 C1 对应的 Bi 之和</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h4 id="2-1-6-SUMIFS"><a href="#2-1-6-SUMIFS" class="headerlink" title="2.1.6 SUMIFS"></a>2.1.6 SUMIFS</h4><p>计算满足多个条件的全部参数的总量：</p>
 <blockquote>
 <p>SUMIFS(sum_range, criteria_range1, criteria1, [criteria_range2, criteria2], …)</p>
 </blockquote>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -616,15 +636,19 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>=SUMIFS(A1:B5, B1:B5, “=A*”, C1:C5, “B”)</td>
 <td>返回 A1:B5 区域中满足条件“Bi 为 ‘Axx..’ 且 Ci 为 ‘B’” 的 Ai 之和</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h3 id="2-2-数值函数"><a href="#2-2-数值函数" class="headerlink" title="2.2 数值函数"></a>2.2 数值函数</h3><h4 id="2-2-1-SUM"><a href="#2-2-1-SUM" class="headerlink" title="2.2.1 SUM"></a>2.2.1 SUM</h4><p>对选中区域数值求和：</p>
 <blockquote>
 <p>SUM(number1, [number2], …)</p>
 </blockquote>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -632,11 +656,14 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>=SUM(A1:B5, D1:F5)</td>
 <td>返回 A1:B5 和 D1:F5 区域值之和</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <ul>
 <li>快捷键：Alt+=</li>
 </ul>
@@ -644,6 +671,7 @@
 <blockquote>
 <p>SUMPRODUCT(array1, [array2], [array3], …)</p>
 </blockquote>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -651,11 +679,14 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>=SUMPRODUCT(A1:A5, B1:B5)</td>
 <td>对 A1:A5, B1:B5 对应乘积求和（常见：加权平均）</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h4 id="2-2-3-ROUND（UP-DOWN）"><a href="#2-2-3-ROUND（UP-DOWN）" class="headerlink" title="2.2.3 ROUND（UP/DOWN）"></a>2.2.3 ROUND（UP/DOWN）</h4><p>对数字按指定位数（向上/向下）四舍五入：</p>
 <blockquote>
 <p>ROUND(number, num_digits)</p>
@@ -665,6 +696,7 @@
 <li>num_digits 等于 0，则将数字四舍五入到最接近的整数。</li>
 <li>num_digits 小于 0，则将数字四舍五入到小数点左边的相应位数。</li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -672,7 +704,8 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>=ROUND(3.14, 1)</td>
 <td>四舍五入到一个小数位，返回 3.1</td>
 </tr>
@@ -680,12 +713,15 @@
 <td>=ROUND(13.14, -1)</td>
 <td>四舍五入到小数点左侧一位，返回 10</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h4 id="2-2-4-SUBTOTAL"><a href="#2-2-4-SUBTOTAL" class="headerlink" title="2.2.4 SUBTOTAL"></a>2.2.4 SUBTOTAL</h4><p>返回列表或数据库中的分类汇总：</p>
 <blockquote>
 <p>SUBTOTAL(function_num, ref1, [ref2],…)</p>
 </blockquote>
 <p>其中，function_num 与函数对应表如下：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -693,7 +729,8 @@
 <th>对应函数</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>1    101</td>
 <td>AVERAGE</td>
 </tr>
@@ -737,7 +774,10 @@
 <td>11    111</td>
 <td>VARP</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -745,15 +785,19 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>=SUBTOTAL(9/109, A1:A5)</td>
 <td>对 A1:A5 执行 9/109 代表的函数（求和）</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h4 id="2-2-5-LARGE"><a href="#2-2-5-LARGE" class="headerlink" title="2.2.5 LARGE"></a>2.2.5 LARGE</h4><p>返回数据集中第 k 个最大值：</p>
 <blockquote>
 <p>LARGE(array, k)</p>
 </blockquote>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -761,11 +805,14 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>=LARGE(A1:B5, 5)</td>
 <td>返回 A1:B5 区域第 5 大的值</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h3 id="2-3-定位查找函数"><a href="#2-3-定位查找函数" class="headerlink" title="2.3 定位查找函数"></a>2.3 定位查找函数</h3><h4 id="2-3-1-VLOOKUP"><a href="#2-3-1-VLOOKUP" class="headerlink" title="2.3.1 VLOOKUP"></a>2.3.1 VLOOKUP</h4><p>按行查找项目：</p>
 <blockquote>
 <p>VLOOKUP （查阅值、查阅值所在的区域、区域中包含返回值的列号、匹配模式）</p>
@@ -776,6 +823,7 @@
 <li>区域中包含返回值的列号：以 A2:C5 区域为例，A 为第一列，B 为第二列进行计数，依此类推</li>
 <li>匹配模式：近似匹配（TRUE）或完全匹配（FALSE）</li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -783,7 +831,8 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>=VLOOKUP(A1, B1:D5, 2, FALSE)</td>
 <td>在 Bi 列中找到精确等于 A1 的行，返回对应的 Ci（以 B 为首列，C 为第 2 列）</td>
 </tr>
@@ -791,28 +840,28 @@
 <td>=IF(VLOOKUP(A1, B1:D5, 2, FALSE)=’C’, ‘找到’, ‘未找到’)</td>
 <td>在 Bi 列中找到精确等于 A1 的行，取出对应的 Ci，若 Ci 为 ‘C’，返回’找到’, 否则返回’未找到’。</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h4 id="2-3-2-LOOKUP"><a href="#2-3-2-LOOKUP" class="headerlink" title="2.3.2 LOOKUP"></a>2.3.2 LOOKUP</h4><p>在单行区域或单列区域（称为“向量”）中查找值，然后返回第二个单行区域或单列区域中相同位置的值：</p>
 <blockquote>
 <p>LOOKUP(lookup_value, lookup_vector, [result_vector])</p>
 </blockquote>
 <ul>
-<li><p>lookup_value：LOOKUP 在第一个向量中搜索的值，可以是数字、文本、逻辑值、名称或对值的引用</p>
-</li>
+<li>lookup_value：LOOKUP 在第一个向量中搜索的值，可以是数字、文本、逻辑值、名称或对值的引用</li>
 <li><p>lookup_vector：只包含一行或一列的区域</p>
 <p>注：</p>
 <ul>
-<li><p>lookup_vector 中的值必须按升序排列：…, -2, -1, 0, 1, 2, …, A-Z, FALSE, TRUE；否则，LOOKUP 可能无法返回正确的值。 文本不区分大小写。</p>
-</li>
+<li>lookup_vector 中的值必须按升序排列：…, -2, -1, 0, 1, 2, …, A-Z, FALSE, TRUE；否则，LOOKUP 可能无法返回正确的值。 文本不区分大小写。</li>
 <li><p>如果 LOOKUP 函数找不到 lookup_value，则该函数会与 lookup_vector 中小于或等于 lookup_value 的最大值进行匹配。</p>
 </li>
 <li><p>如果 lookup_value 小于 lookup_vector 中的最小值，则 LOOKUP 会返回 #N/A 错误值</p>
 </li>
 </ul>
 </li>
-<li><p>result_vector：只包含一行或一列的区域，与 lookup_vector 大小必须相同</p>
-</li>
+<li>result_vector：只包含一行或一列的区域，与 lookup_vector 大小必须相同</li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -820,15 +869,19 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>=LOOKUP(C1, A1:A5, B1:B5)</td>
 <td>返回 A1:A5 中等于 C1 的行对应的 Bi</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h4 id="2-3-3-MATCH"><a href="#2-3-3-MATCH" class="headerlink" title="2.3.3 MATCH"></a>2.3.3 MATCH</h4><p>在选中单元格中搜索特定的项，然后返回该项在此区域中的相对位置：</p>
 <blockquote>
 <p>MATCH(lookup_value, lookup_array, [match_type])</p>
 </blockquote>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -836,7 +889,8 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>1 或缺省</td>
 <td>查找小于或等于 lookup_value 的最大值。 lookup_array 参数中的值必须以升序排序</td>
 </tr>
@@ -848,7 +902,10 @@
 <td>-1</td>
 <td>查找大于或等于 lookup_value 的最小值。 lookup_array 参数中的值必须按降序排列</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -856,11 +913,14 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>=MATCH(“b”, {“a”,”b”,”c”}, 0)</td>
 <td>返回 “b” 在 {“a”,”b”,”c”} 中的相对位置</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h4 id="2-3-4-INDEX"><a href="#2-3-4-INDEX" class="headerlink" title="2.3.4 INDEX"></a>2.3.4 INDEX</h4><p>返回表格或区域中的值或值的引用：</p>
 <blockquote>
 <p>INDEX(array, row_num, [column_num])</p>
@@ -870,6 +930,7 @@
 <li>数组具有多行和多列, 并且仅使用 row_num 或 column_num：返回数组中整个行或列的数组</li>
 <li>同时使用 row_num 和 column_num 参数：返回 row_num 和 column_num 交叉处的单元格中的值。该值必须在数组中，否则将返回 #REF! 错误。</li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -877,15 +938,19 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>=INDEX(A1:B5, 2, 3)</td>
 <td>返回 A1:B5 区域第 2 行第 3 列交叉处的值</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h3 id="2-4-格式函数"><a href="#2-4-格式函数" class="headerlink" title="2.4 格式函数"></a>2.4 格式函数</h3><h4 id="2-4-1-IS"><a href="#2-4-1-IS" class="headerlink" title="2.4.1 IS"></a>2.4.1 IS</h4><p>检验指定值并根据结果返回 TRUE 或 FALSE：</p>
 <blockquote>
 <p>IS**(value)</p>
 </blockquote>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -893,7 +958,8 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>ISBLANK</td>
 <td>值为空白单元格</td>
 </tr>
@@ -929,11 +995,14 @@
 <td>ISTEXT</td>
 <td>值为文本</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h4 id="2-4-2-LEFT-RIGHT-MID"><a href="#2-4-2-LEFT-RIGHT-MID" class="headerlink" title="2.4.2 LEFT/RIGHT/MID"></a>2.4.2 LEFT/RIGHT/MID</h4><p>文本字符串[从左起 | 从右起 | 字符串中的指定位置]第一个字符开始返回指定个数的字符：</p>
 <blockquote>
 <p>LEFT/RIGHT(text, [num_chars])<br>MID(text, start_num, num_chars)</p>
 </blockquote>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -941,7 +1010,8 @@
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>=LEFT/RIGHT(A1, 3)</td>
 <td>A1 左/右边第 1 个字符起，返回 3 个字符</td>
 </tr>
@@ -949,7 +1019,9 @@
 <td>=MID(A1, 3, 5)</td>
 <td>A1 第 3 个字符起，返回 5 个字符</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 
       
     </div>

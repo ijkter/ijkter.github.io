@@ -490,31 +490,34 @@
       
         <p><font color="#008000"> [Updated] </font>本文梳理了《计算机组成原理》的基础知识</p>
 <a id="more"></a>
-
-<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><table>
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="center">Chapter 1</th>
-<th align="center">Chapter 2</th>
-<th align="center">Chapter 3</th>
-<th align="center">Chapter 4</th>
-<th align="center">Chapter 5</th>
-<th align="center">Chapter 6</th>
-<th align="center">Chapter 7</th>
-<th align="center">Chapter 8</th>
+<th style="text-align:center">Chapter 1</th>
+<th style="text-align:center">Chapter 2</th>
+<th style="text-align:center">Chapter 3</th>
+<th style="text-align:center">Chapter 4</th>
+<th style="text-align:center">Chapter 5</th>
+<th style="text-align:center">Chapter 6</th>
+<th style="text-align:center">Chapter 7</th>
+<th style="text-align:center">Chapter 8</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center"><a href="#bus">总线</a></td>
-<td align="center"><a href="#mm">存储器</a></td>
-<td align="center"><a href="#io">I/O</a></td>
-<td align="center"><a href="#cal">计算的运算方法</a></td>
-<td align="center"><a href="#instruct">指令系统</a></td>
-<td align="center"><a href="#cpu">CPU</a></td>
-<td align="center"><a href="#cu1">控制单元</a></td>
-<td align="center"><a href="#cu2">控制单元的设计</a></td>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="#bus">总线</a></td>
+<td style="text-align:center"><a href="#mm">存储器</a></td>
+<td style="text-align:center"><a href="#io">I/O</a></td>
+<td style="text-align:center"><a href="#cal">计算的运算方法</a></td>
+<td style="text-align:center"><a href="#instruct">指令系统</a></td>
+<td style="text-align:center"><a href="#cpu">CPU</a></td>
+<td style="text-align:center"><a href="#cu1">控制单元</a></td>
+<td style="text-align:center"><a href="#cu2">控制单元的设计</a></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <hr>
 <h4 id="总线"><a href="#总线" class="headerlink" title="总线"></a><span id="bus">总线</span></h4><ul>
 <li><p>判优控制</p>
@@ -607,12 +610,12 @@
 <ul>
 <li>高位交叉编址<ul>
 <li>各模块分别响应不同请求源，实现多体并行</li>
-<li>高位–存体号，低位–选择存储体内的字</li>
+<li>高位—存体号，低位—选择存储体内的字</li>
 </ul>
 </li>
 <li>低位交叉编址，<ul>
 <li>不改变存取周期的前提下，增加存储器带宽，n个模块则带宽提高至n倍</li>
-<li>高位–选择存储体内的字，低位–存体号</li>
+<li>高位—选择存储体内的字，低位—存体号</li>
 <li>存取周期T，总线传输周期t，连续读取n个字时间=T+（n-1）t</li>
 </ul>
 </li>
@@ -650,7 +653,7 @@
 </li>
 </ul>
 </li>
-<li><p>三级存储系统（平衡–速度、容量、价格）</p>
+<li><p>三级存储系统（平衡—速度、容量、价格）</p>
 <ul>
 <li>高速缓存<ul>
 <li>解决：CPU和主存速度匹配，提高访存速度缓存</li>
@@ -720,8 +723,8 @@
 <li>过程：<ol>
 <li>中断请求：CPU启动I/O设备，I/O准备就绪后向CPU提出中断请求</li>
 <li>中断判优：中断判优逻辑选择优先级最高的中断请求，待CPU处理</li>
-<li>中断响应：若INT（中断请求触发器）为”1”且请求中断设备未被屏蔽，系统进入中断响应周期–CPU自动执行中断隐指令[ 硬件完成：保护程序断点(即PC内容)、硬件关中断、向量地址送PC（硬件向量法）或中断识别程序入口地址送PC（软件查询法） ]</li>
-<li>中断服务：中断响应周期结束，CPU转入取指周期，按向量地址取出无条件转移指令（或按向量地址查入口地址表）；转至向量地址对应的中断程序服务入口地址，开始执行中断服务程序[ 保护现场（PC内容–中断隐指令；寄存器内容–软件编程）、与I/O传送信息、恢复现场 ]</li>
+<li>中断响应：若INT（中断请求触发器）为”1”且请求中断设备未被屏蔽，系统进入中断响应周期—CPU自动执行中断隐指令[ 硬件完成：保护程序断点(即PC内容)、硬件关中断、向量地址送PC（硬件向量法）或中断识别程序入口地址送PC（软件查询法） ]</li>
+<li>中断服务：中断响应周期结束，CPU转入取指周期，按向量地址取出无条件转移指令（或按向量地址查入口地址表）；转至向量地址对应的中断程序服务入口地址，开始执行中断服务程序[ 保护现场（PC内容—中断隐指令；寄存器内容—软件编程）、与I/O传送信息、恢复现场 ]</li>
 <li>中断返回：中断服务程序最后一条即中断返回指令（返回程序断点）</li>
 </ol>
 </li>
@@ -863,35 +866,39 @@
 <h4 id="指令系统"><a href="#指令系统" class="headerlink" title="指令系统"></a><span id="instruct">指令系统</span></h4><ul>
 <li>不同地址格式指令</li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="center">地址格式</th>
-<th align="center">访存次数</th>
-<th align="center">备注</th>
+<th style="text-align:center">地址格式</th>
+<th style="text-align:center">访存次数</th>
+<th style="text-align:center">备注</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">四地址</td>
-<td align="center">4</td>
-<td align="center">A4指出下条指令地址</td>
+<tbody>
+<tr>
+<td style="text-align:center">四地址</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">A4指出下条指令地址</td>
 </tr>
 <tr>
-<td align="center">三地址</td>
-<td align="center">4</td>
-<td align="center">PC指出下条指令地址</td>
+<td style="text-align:center">三地址</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">PC指出下条指令地址</td>
 </tr>
 <tr>
-<td align="center">二地址</td>
-<td align="center">4</td>
-<td align="center">操作结果存回A1、A2或ACC</td>
+<td style="text-align:center">二地址</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">操作结果存回A1、A2或ACC</td>
 </tr>
 <tr>
-<td align="center">一地址</td>
-<td align="center">4</td>
-<td align="center">ACC存放操作数和结果</td>
+<td style="text-align:center">一地址</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">ACC存放操作数和结果</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <ul>
 <li><p>数据存放方式。存储字长32位，可按字节、半字、字寻址：</p>
 <ul>
@@ -1112,12 +1119,10 @@
 </li>
 <li><p>组合逻辑与微程序控制组成异同</p>
 <ul>
-<li><p>同：均有PC、IR、时序电路、中断系统、状态条件</p>
-</li>
+<li>同：均有PC、IR、时序电路、中断系统、状态条件</li>
 <li><p>异：</p>
 <ul>
-<li><p>微操作命令序列形成部件不同。组合逻辑核心部件–门电路；微程序核心部件–控制存储器ROM(存放全部微程序)</p>
-</li>
+<li>微操作命令序列形成部件不同。组合逻辑核心部件—门电路；微程序核心部件—控制存储器ROM(存放全部微程序)</li>
 <li><p>微操作命令及节拍安排的主要差别：</p>
 <ul>
 <li><p>取指阶段</p>
@@ -1125,8 +1130,6 @@
 </li>
 <li><p>微程序每条指令都要增加一个将微指令下地址字段送CMAR的微操作</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ad(CMDR) -&gt; CMAR</span><br></pre></td></tr></table></figure>
-
-
 </li>
 </ul>
 </li>
