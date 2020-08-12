@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[test]]></title>
     <url>%2F2020%2F08%2F12%2Ftest%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[Test for hexo.]]></content>
       <categories>
         <category>test</category>
       </categories>
@@ -78,8 +78,8 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>github</tag>
         <tag>next</tag>
+        <tag>github</tag>
       </tags>
   </entry>
   <entry>
