@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2F2020%2F08%2F12%2Ftest%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[systemctl 与 service]]></title>
     <url>%2F2019%2F11%2F21%2Fsystemctl%E4%B8%8Eservice%2F</url>
     <content type="text"><![CDATA[[Updated] 本文整理了 systemctl 与 service 的不同。 systemctl 与 serviceserviceservice 解析通过命令查看 service 命令的脚本内容： cat /usr/sbin/service # 通过 “whereis service” 定位脚本位置 可知，其大致功能是： 通过 service 命令，传入服务程序名和服务程序所支持的命令（最起码支持 start stop）； service 脚本在 /etc/init.d 下找到相应的程序脚本； 执行相应命令参数的程序脚本。 service 用法通过 man 函数查找 service 命令： man service 命令用法： service &lt; option &gt; | --status-all | [ service_name [ command | --full-restart ] ] 常用命令 含义 service &lt;服务名&gt; start 启动服务 service &lt;服务名&gt; stop 停止服务 service &lt;服务名&gt; restart 重启服务 systemctlsystemctl 解析CentOS 7 之后，CentOS 使用 systemd 服务管理系统启动和系统服务，具体通过 systemctl 命令来控制。 systemctl 用法用法： systemctl [OPTIONS...] COMMAND [NAME...] 常用命令 含义 systemctl start &lt;服务名&gt; 启动服务 systemctl stop &lt;服务名&gt; 停止服务 systemctl restart &lt;服务名&gt; 重启服务 systemctl status &lt;服务名&gt; 查看服务运行状态 systemctl reload &lt;服务名&gt; 重载配置文件]]></content>
@@ -72,17 +77,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[正则表达式语法速览]]></title>
-    <url>%2F2018%2F03%2F21%2Fregex%2F</url>
-    <content type="text"><![CDATA[[Updated] 本文记录了正则表达式的常用语法。 正则表达式Def描述复杂文本规则的代码，用以匹配符合规则的字符串 转义字符用 “\” 转义。如：表达文本 “\”，表达式中应使用 “\“ 元字符 元字符 含义 表达式 匹配示例 . 除换行符以外任意字符 q.e qwe、qse ^ 字符串的开始（位置） ^qw （行首）qw $ 匹配字符串的结束（位置） we$ we（行尾） \b 单词的开头或结尾，即单词交界处（位置） \d 一位数字 q\dw q1w \s 空白字符(半/全角空格，制表符，换行符等) qw\se qw e \w 任意的字母，数字，下划线等 q\we q_e \A 仅匹配字符串开头 \Aqwe qwe \Ｚ 仅匹配字符串结尾 qwe\Z qwe [\u4E00-\u9FA5] 匹配汉字 q[\u4E00-\u9FA5]e q我e 限定符 限定符 含义 表达式 匹配示例 * 重复零次或更多次 qwe* qweeeee、qw + 重复一次或更多次 qw\s+e qw e ? 重复零次或一次 qw?e qwe、qe {n} 重复 n 次 qw{3}e qwwwe {n,} 重复 n 次或更多次 qw{3,}e qwwwwe {n,m} 重复 n 到 m 次(n ≠ m) qw{5,6}e qwwwwwwe | 分支条件 分支 含义 表达式 匹配示例 &#124; 使用分枝条件时，将会从左到右地测试每个条件，如果满足了某个分枝的话，就不会去再测试后面的条件，因此要注意各个条件的顺序 qw?e &#124; qw*q qe、qwwwwq 分组表达式中，被小括号括起来的子表达式称分组： 表达式左到右顺序按次遇到的左括号及其括号内容即编号第n个分组 分组作为一个整体，后可接数量词：(分组){重复次数} 分组中 “|” 仅分组内有效 分组 含义 表达式 匹配示例 (……) 分组 q(w &#124; e)r qer、qwr \&lt;编号&gt; 引用指定编号分组 (\d)qwe\1 1qwe1 (?&lt;别名&gt;) 为分组指定别名（仍可使用编号） (?P\d)abc(?P=id) 1abc1 (?=&lt;别名&gt;) 引用指定别名分组 (?P\d)abc(?P=id) 1abc1 反义查找不属于该定义的字符 反义代码 说明 表达式 匹配示例 \W 匹配任意不是字母，数字，下划线，汉字的字符 q\We q e \S 匹配任意不是空白符的字符 q\Se q!e \D 匹配任意非数字的字符 q\De qwe \B 匹配不是单词开头或结束的位置 q\Bwe qwe 字符集合 匹配除了字符集合中所有字符以外的任意字符 qwet qrt 后向引用 捕获 含义 (exp) 匹配exp,并捕获文本到自动命名的组里 (?&lt;组名&gt;exp) 匹配exp,并捕获文本到名称为组名的组里，也可以写成(?’组名’exp) (?:exp) 匹配exp,不捕获匹配的文本，也不给此分组分配组号 零宽断言 零宽断言 含义 (?=exp) 匹配exp前面的位置 (?&lt;=exp) 匹配exp后面的位置 (?!exp) 匹配后面跟的不是exp的位置 (?&lt;!exp) 匹配前面不是exp的位置 注释表达式中添加注释： (?#注释) 示例： \d{3}(?#区号)-\d{7} 加粗部分即注释 懒惰限定符匹配任意数量的重复，但是在能使整个匹配成功的前提下使用最少的重复 懒惰限定符 含义 *? 重复任意次，但尽可能少重复 +? 重复1次或更多次，但尽可能少重复 ?? 重复0次或1次，但尽可能少重复 {n,m}? 重复n到m次，但尽可能少重复 {n,}? 重复n次以上，但尽可能少重复]]></content>
-      <categories>
-        <category>regex</category>
-      </categories>
-      <tags>
-        <tag>regex</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[从 pip 到 Pipfile]]></title>
     <url>%2F2018%2F03%2F21%2Fpip%2F</url>
     <content type="text"><![CDATA[[Updated] 本文记录了 Python 软件包管理相关的 pip、requirements.txt、Pipfile，以及 Python 虚拟环境的内容。 从 pip 到 Pipfilepippip 是一个通用的 Python 软件包管理工具，可以从 Python 官方的第三方库仓库 PyPI （默认）或其他索引安装软件包。 pip 安装注：Python 2.7.9 + 或 Python 3.4+ 内置 pip。 在终端使用以下命令在当前全局 Python 解释器下安装 pip： sudo python get-pip.py 查看安装版本： pip --version 升级 pip 到最新版本： pip install -U pip pip 使用查看 pip 用法： pip --help pip 常用命令： 查看已安装包列表 pip list 查找/安装/卸载包 pip search/install/uninstall &lt;Package&gt; # 安装时使用 “&lt;Package&gt;=版本号” 可指定下载版本 升级包 pip install --upgrade &lt;Package&gt; 查看包的详细信息 pip show -f &lt;Package&gt; 虚拟环境虚拟环境作用Python 虚拟环境允许将 Python 包安装在特定应用程序的隔离位置，而不是全局安装，避免了不同程序因 Python 包的依赖版本不同而导致彼此的运行受到影响。 因为不同的项目通常会依赖不同版本的库或 Python 版本，所以建议使用虚拟环境为每一个项目创建独立的 Python 环境。 虚拟环境的使用 安装虚拟环境： pip install virtualenv 项目根目录下创建虚拟环境： virtualenv --no-site-packages &lt;虚拟环境名&gt; # --no-site-packages 参数：不复制全局 python 解释器下的任何第三方库 此时，项目根目录下会创建 venv 目录，用以存放虚拟环境。 激活虚拟环境： source venv/bin/activate 此时，终端前缀会出现字样“(&lt;虚拟环境名&gt;)”，表示已进入虚拟环境。 关闭当前虚拟环境： deactivate 此时，终端前缀消失，回到全局环境。 requirements.txt为了解决不同环境下构建项目时可能产生的依赖问题，Python 项目中一般会包含 requirements.txt 文件，文件内记录了该项目所使用到全部依赖包及其精确版本号，以便在新环境中安装该项目所需要的运行环境依赖。 生成 requirements.txt在 Python 项目的根目录终端执行以下命令： pip freeze &gt; requirements.txt 使用 requirements.txt使用 requirements.txt 安装依赖 pip install -r requirements.txt # -r 可以防止安装过程中的某个错误而提前终止安装 缺点requirements.txt 是一个简单的纯文本文件，需要手动维护，灵活性低。 Pipfile 和 Pipfile.lockPipfilePipfile 与 Pipfile.lock 是社区拟定的依赖管理文件，用于替代 requirements.txt。一个项目对应一个 Pipfile，支持开发环境与正式环境区分。默认提供 default 和 development 区分。 与 requirements.txt 区别： Pipfile 文件是 TOML 格式； requirements.txt 是纯文本。 Pipfile.lock根据 Pipfile 和当前环境自动生成的 JSON 格式的依赖文件。 注： 不可手动修改！ pipenvpipenv 结合了 Pipfile 、pip 和 virtualenv。其作用主要有如下几点： 自动在项目目录的 .venv 目录创建虚拟环境。 自动生成 Pipfile 和 Pipfile.lock。 自动管理 Pipfile 新安装和删除的包。 使用 pipenv 创建虚拟环境并安装 Pipfile 中所列的所有包： 在 Python 项目的根目录终端执行以下命令： pipenv install 此时，当前项目根目录下会创建 .venv 文件夹，并安装 Pipfile 中的所有第三方软件包。 确认 Pipfile 中所有包已安装： pipenv lock 确认并根据安装版本生成 Pipfile.lock。 激活虚拟环境： 在 Python 项目的根目录终端执行以下命令： pipenv shell 运行程序： pipenv run python **.py # 运行 python 文件 pipenv run flask run # 启动 flask 程序 注： 这里会调用虚拟环境中的 python 解释器，而不是全局的 python 解释器。 在激活虚拟环境后，pipenv run 可以省略，但养成使用 pipenv run 的习惯可以避免运行时忘记启用虚拟环境。]]></content>
@@ -94,6 +88,17 @@
         <tag>pip</tag>
         <tag>虚拟环境</tag>
         <tag>pipfile</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[正则表达式语法速览]]></title>
+    <url>%2F2018%2F03%2F21%2Fregex%2F</url>
+    <content type="text"><![CDATA[[Updated] 本文记录了正则表达式的常用语法。 正则表达式Def描述复杂文本规则的代码，用以匹配符合规则的字符串 转义字符用 “\” 转义。如：表达文本 “\”，表达式中应使用 “\“ 元字符 元字符 含义 表达式 匹配示例 . 除换行符以外任意字符 q.e qwe、qse ^ 字符串的开始（位置） ^qw （行首）qw $ 匹配字符串的结束（位置） we$ we（行尾） \b 单词的开头或结尾，即单词交界处（位置） \d 一位数字 q\dw q1w \s 空白字符(半/全角空格，制表符，换行符等) qw\se qw e \w 任意的字母，数字，下划线等 q\we q_e \A 仅匹配字符串开头 \Aqwe qwe \Ｚ 仅匹配字符串结尾 qwe\Z qwe [\u4E00-\u9FA5] 匹配汉字 q[\u4E00-\u9FA5]e q我e 限定符 限定符 含义 表达式 匹配示例 * 重复零次或更多次 qwe* qweeeee、qw + 重复一次或更多次 qw\s+e qw e ? 重复零次或一次 qw?e qwe、qe {n} 重复 n 次 qw{3}e qwwwe {n,} 重复 n 次或更多次 qw{3,}e qwwwwe {n,m} 重复 n 到 m 次(n ≠ m) qw{5,6}e qwwwwwwe | 分支条件 分支 含义 表达式 匹配示例 &#124; 使用分枝条件时，将会从左到右地测试每个条件，如果满足了某个分枝的话，就不会去再测试后面的条件，因此要注意各个条件的顺序 qw?e &#124; qw*q qe、qwwwwq 分组表达式中，被小括号括起来的子表达式称分组： 表达式左到右顺序按次遇到的左括号及其括号内容即编号第n个分组 分组作为一个整体，后可接数量词：(分组){重复次数} 分组中 “|” 仅分组内有效 分组 含义 表达式 匹配示例 (……) 分组 q(w &#124; e)r qer、qwr \&lt;编号&gt; 引用指定编号分组 (\d)qwe\1 1qwe1 (?&lt;别名&gt;) 为分组指定别名（仍可使用编号） (?P\d)abc(?P=id) 1abc1 (?=&lt;别名&gt;) 引用指定别名分组 (?P\d)abc(?P=id) 1abc1 反义查找不属于该定义的字符 反义代码 说明 表达式 匹配示例 \W 匹配任意不是字母，数字，下划线，汉字的字符 q\We q e \S 匹配任意不是空白符的字符 q\Se q!e \D 匹配任意非数字的字符 q\De qwe \B 匹配不是单词开头或结束的位置 q\Bwe qwe 字符集合 匹配除了字符集合中所有字符以外的任意字符 qwet qrt 后向引用 捕获 含义 (exp) 匹配exp,并捕获文本到自动命名的组里 (?&lt;组名&gt;exp) 匹配exp,并捕获文本到名称为组名的组里，也可以写成(?’组名’exp) (?:exp) 匹配exp,不捕获匹配的文本，也不给此分组分配组号 零宽断言 零宽断言 含义 (?=exp) 匹配exp前面的位置 (?&lt;=exp) 匹配exp后面的位置 (?!exp) 匹配后面跟的不是exp的位置 (?&lt;!exp) 匹配前面不是exp的位置 注释表达式中添加注释： (?#注释) 示例： \d{3}(?#区号)-\d{7} 加粗部分即注释 懒惰限定符匹配任意数量的重复，但是在能使整个匹配成功的前提下使用最少的重复 懒惰限定符 含义 *? 重复任意次，但尽可能少重复 +? 重复1次或更多次，但尽可能少重复 ?? 重复0次或1次，但尽可能少重复 {n,m}? 重复n到m次，但尽可能少重复 {n,}? 重复n次以上，但尽可能少重复]]></content>
+      <categories>
+        <category>regex</category>
+      </categories>
+      <tags>
+        <tag>regex</tag>
       </tags>
   </entry>
   <entry>
