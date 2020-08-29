@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[new_post]]></title>
+    <url>%2F2020%2F08%2F29%2Fnew-post%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[test]]></title>
     <url>%2F2020%2F08%2F12%2Ftest%2F</url>
     <content type="text"><![CDATA[Test for hexo.]]></content>
@@ -78,8 +83,8 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>next</tag>
         <tag>github</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
