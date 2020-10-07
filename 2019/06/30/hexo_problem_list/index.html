@@ -457,7 +457,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">961</span>
+              <span title="本文字数">1.4k</span>
             </span>
           
 
@@ -510,6 +510,8 @@
 </li>
 </ul>
 <h2 id="post-meta-不显示更新时间"><a href="#post-meta-不显示更新时间" class="headerlink" title="post_meta 不显示更新时间"></a>post_meta 不显示更新时间</h2><p>修改主题配置文件，post_meta 模块中设置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">updated:</span><br><span class="line"> enable: true</span><br><span class="line"> anotherday: false</span><br></pre></td></tr></table></figure></p>
+<h2 id="修改新建文章模板"><a href="#修改新建文章模板" class="headerlink" title="修改新建文章模板"></a>修改新建文章模板</h2><p>hexo 会根据 scaffolds 文件夹内相应的模板文件来建立文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &lt;模板：post/page/draft&gt; &lt;filename&gt;  -- 以 /scaffolds/&lt;模板：post/page/draft&gt;.md 为模板新建名为 &lt;filename&gt; 的文章</span><br></pre></td></tr></table></figure></p>
+<p>post 模板添加内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">updated: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">categories:</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;font color=#008000&gt; [Updated] &lt;/font&gt; 已完成</span><br><span class="line">&lt;font color=#FF0000&gt; [Updating] &lt;/font&gt; 更新中</span><br><span class="line"></span><br><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure></p>
 <h2 id="数学公式不显示"><a href="#数学公式不显示" class="headerlink" title="数学公式不显示"></a>数学公式不显示</h2><ol>
 <li><p>更换渲染引擎为 hexo-renderer-marked</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save # 卸载 hexo 默认引擎 hexo-renderer-marked</span><br><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure>
@@ -819,7 +821,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#local-search-不能用"><span class="nav-number">1.</span> <span class="nav-text">local_search 不能用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#post-meta-不显示更新时间"><span class="nav-number">2.</span> <span class="nav-text">post_meta 不显示更新时间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数学公式不显示"><span class="nav-number">3.</span> <span class="nav-text">数学公式不显示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片不显示"><span class="nav-number">4.</span> <span class="nav-text">图片不显示</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#local-search-不能用"><span class="nav-number">1.</span> <span class="nav-text">local_search 不能用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#post-meta-不显示更新时间"><span class="nav-number">2.</span> <span class="nav-text">post_meta 不显示更新时间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改新建文章模板"><span class="nav-number">3.</span> <span class="nav-text">修改新建文章模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数学公式不显示"><span class="nav-number">4.</span> <span class="nav-text">数学公式不显示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片不显示"><span class="nav-number">5.</span> <span class="nav-text">图片不显示</span></a></li></ol></div>
             
 
           </div>
