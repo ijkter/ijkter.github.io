@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2F2020%2F11%2F11%2Ftest-2342%2F</url>
+    <content type="text"><![CDATA[[Updated] 已完成 [Updating] 更新中]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[new_template]]></title>
     <url>%2F2020%2F10%2F07%2Fnew-template%2F</url>
     <content type="text"><![CDATA[[Updated] 已完成 [Updating] 更新中]]></content>
